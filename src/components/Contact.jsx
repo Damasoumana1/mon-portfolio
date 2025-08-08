@@ -34,8 +34,8 @@ const Contact = () => {
     try {
       // Configuration EmailJS avec les vraies clés
       const result = await emailjs.send(
-        'service_c5bgp0g', // Service ID
-        'template_eut75lw', // Template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Service ID
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Template ID
         {
           name: formData.name,
           email: formData.email,
@@ -44,7 +44,7 @@ const Contact = () => {
           title: formData.subject,
           time: new Date().toLocaleString()
         },
-        'c8xdNAIpSbCbvbcNH' // Public Key
+        process.env.REACT_APP_EMAILJS_USER_ID // Public Key
       );
 
       if (result.status === 200) {
