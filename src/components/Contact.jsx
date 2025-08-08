@@ -3,9 +3,12 @@ import { useInView } from 'react-intersection-observer';
 import Button from './UI/Button.jsx';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getTranslation } from '../translations/translations';
 
 const Contact = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const { language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -66,7 +69,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl font-bold text-center mb-12 text-blue-400"
         >
-          Me Contacter
+          {getTranslation(language, 'contact.title')}
         </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
@@ -80,7 +83,7 @@ const Contact = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h8v2H6v-2zm0 4h8v2H6v-2zm10 0h2v2h-2v-2zm0-4h2v2h-2v-2z" />
               </svg>
-              Informations de Contact
+              {getTranslation(language, 'contact.contactInfo')}
             </h3>
             <div className="space-y-6 text-gray-300">
               <div className="flex items-center">
@@ -130,7 +133,7 @@ const Contact = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M21 8V7l-3 3-3-3v1l3 3 3-3zm-5 12H3V4h13V2H3c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-8h-2v8zM9 10H7v2h2v-2zm4 4h-2v2h2v-2zm0-4h-2v2h2v-2z" />
               </svg>
-              Envoyer un Message
+              {getTranslation(language, 'contact.sendMessage')}
             </h3>
 
             {/* Messages de statut */}
@@ -140,7 +143,7 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="mb-4 p-3 bg-green-500 text-white rounded-lg"
               >
-                ✅ Message envoyé avec succès ! Je vous répondrai bientôt.
+                {getTranslation(language, 'contact.success')}
               </motion.div>
             )}
 
@@ -150,14 +153,14 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="mb-4 p-3 bg-red-500 text-white rounded-lg"
               >
-                ❌ Erreur lors de l'envoi. Veuillez réessayer ou me contacter directement.
+                {getTranslation(language, 'contact.error')}
               </motion.div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="relative">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-                  Nom *
+                  {getTranslation(language, 'contact.nameRequired')}
                 </label>
                 <div className="flex items-center">
                   <svg className="w-5 h-5 text-blue-400 absolute left-3" fill="currentColor" viewBox="0 0 24 24">
@@ -171,13 +174,13 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
-                    placeholder="Votre Nom"
+                    placeholder={getTranslation(language, 'contact.namePlaceholder')}
                   />
                 </div>
               </div>
               <div className="relative">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                  Email *
+                  {getTranslation(language, 'contact.emailRequired')}
                 </label>
                 <div className="flex items-center">
                   <svg className="w-5 h-5 text-blue-400 absolute left-3" fill="currentColor" viewBox="0 0 24 24">
@@ -191,13 +194,13 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
-                    placeholder="Votre Email"
+                    placeholder={getTranslation(language, 'contact.emailPlaceholder')}
                   />
                 </div>
               </div>
               <div className="relative">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
-                  Sujet *
+                  {getTranslation(language, 'contact.subjectRequired')}
                 </label>
                 <div className="flex items-center">
                   <svg className="w-5 h-5 text-blue-400 absolute left-3" fill="currentColor" viewBox="0 0 24 24">
@@ -211,13 +214,13 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
-                    placeholder="Sujet du message"
+                    placeholder={getTranslation(language, 'contact.subjectPlaceholder')}
                   />
                 </div>
               </div>
               <div className="relative">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-                  Message *
+                  {getTranslation(language, 'contact.messageRequired')}
                 </label>
                 <div className="flex items-start">
                   <svg className="w-5 h-5 text-blue-400 absolute left-3 top-4" fill="currentColor" viewBox="0 0 24 24">
@@ -231,7 +234,7 @@ const Contact = () => {
                     required
                     rows="5"
                     className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
-                    placeholder="Votre Message"
+                    placeholder={getTranslation(language, 'contact.messagePlaceholder')}
                   ></textarea>
                 </div>
               </div>
@@ -241,7 +244,7 @@ const Contact = () => {
                   className="flex-1"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer Message'}
+                  {isSubmitting ? getTranslation(language, 'contact.sending') : getTranslation(language, 'contact.send')}
                 </Button>
                 <Button
                   type="button"
@@ -257,7 +260,7 @@ const Contact = () => {
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
                   </svg>
-                  Télécharger CV
+                  {getTranslation(language, 'contact.downloadCV')}
                 </Button>
               </div>
             </form>

@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getTranslation } from '../translations/translations';
 
 const About = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { language } = useLanguage();
 
   return (
     <section id="about" className="py-20" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -14,7 +17,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl font-bold text-center mb-12 text-blue-400"
         >
-          À Propos de Moi
+          {getTranslation(language, 'about.title')}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <motion.div
@@ -24,12 +27,12 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-gray-300"
           >
-            <h3 className="text-2xl font-semibold mb-4 text-blue-400">Qui suis-je ?</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-blue-400">{getTranslation(language, 'about.whoAmI')}</h3>
             <p className="mb-4">
-              Ingénieur des travaux en informatique, je suis passionné par l'informatique et le développement web et mobile. Motivé, curieux et en quête d'expérience professionnelle, je cherche à mettre en pratique mes compétences en programmation pour contribuer à des projets innovants.
+              {getTranslation(language, 'about.whoAmIText1')}
             </p>
             <p>
-              Ma formation académique et mes projets personnels m'ont permis de développer des compétences techniques solides en programmation et en conception de logiciels. Je suis constamment à la recherche de nouvelles connaissances et technologies pour améliorer mes compétences.
+              {getTranslation(language, 'about.whoAmIText2')}
             </p>
           </motion.div>
           <motion.div
@@ -39,7 +42,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-300"
           >
-            <h3 className="text-2xl font-semibold mb-4 text-blue-400">Informations Personnelles</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-blue-400">{getTranslation(language, 'about.personalInfo')}</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -74,20 +77,16 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-300"
           >
-            <h3 className="text-2xl font-semibold mb-4 text-blue-400">Langues</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-blue-400">{getTranslation(language, 'about.languages')}</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <span className="mr-2">Français</span>
-                <span className="text-blue-400">Très bien</span>
+                <span className="mr-2">{getTranslation(language, 'about.french')}</span>
+                <span className="text-blue-400">{getTranslation(language, 'about.native')}</span>
               </div>
               <div className="flex items-center">
-                <span className="mr-2">Anglais</span>
-                <span className="text-blue-400">Intermédiaire</span>
+                <span className="mr-2">{getTranslation(language, 'about.english')}</span>
+                <span className="text-blue-400">{getTranslation(language, 'about.intermediate')}</span>
               </div>
-              {/* <div className="flex items-center">
-                <span className="mr-2">Italien</span>
-                <span className="text-blue-400">Élémentaire A2</span>
-              </div> */}
             </div>
           </motion.div>
         </div>

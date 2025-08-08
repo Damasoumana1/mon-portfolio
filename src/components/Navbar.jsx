@@ -2,11 +2,22 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import ThemeToggle from './UI/ThemeToggle';
+import LanguageSelector from './LanguageSelector';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getTranslation } from '../translations/translations';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
-  const navItems = ['About', 'Formation', 'Skills', 'Projects', 'Certificates', 'Contact'];
+  const { language } = useLanguage();
+
+  const navItems = [
+    { key: 'about', section: 'about' },
+    { key: 'formation', section: 'formation' },
+    { key: 'skills', section: 'skills' },
+    { key: 'projects', section: 'projects' },
+    { key: 'certificates', section: 'certificates' },
+    { key: 'contact', section: 'contact' }
+  ];
 
   return (
     <motion.nav
@@ -26,18 +37,19 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
-                key={item}
-                to={item.toLowerCase()}
+                key={item.key}
+                to={item.section}
                 smooth={true}
                 duration={500}
                 className="relative text-gray-300 hover:text-blue-400 cursor-pointer transition-colors duration-300 group"
               >
-                {item}
+                {getTranslation(language, `nav.${item.key}`)}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
           </div>
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -53,6 +65,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="md:hidden flex items-center space-x-2">
+            <LanguageSelector />
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -79,14 +92,14 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link
-                key={item}
-                to={item.toLowerCase()}
+                key={item.key}
+                to={item.section}
                 smooth={true}
                 duration={500}
                 className="block text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {getTranslation(language, `nav.${item.key}`)}
               </Link>
             ))}
           </div>

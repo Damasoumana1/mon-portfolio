@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import Button from './UI/Button.jsx';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getTranslation } from '../translations/translations';
 
 const Hero = () => {
+  const { language } = useLanguage();
+
   const handleDownloadCV = () => {
     // Créer un lien temporaire pour télécharger le CV
     const link = document.createElement('a');
@@ -22,13 +26,21 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="text-center lg:text-left"
           >
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.1 }}
+              className="text-lg text-gray-400 mb-2"
+            >
+              {getTranslation(language, 'hero.greeting')}
+            </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               className="text-5xl md:text-6xl font-bold text-blue-400 mb-4"
             >
-              Soumana DAMA
+              {getTranslation(language, 'hero.name')}
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -36,7 +48,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="text-3xl md:text-4xl font-semibold text-gray-300 mb-6"
             >
-              Développeur Web et Mobile
+              {getTranslation(language, 'hero.title')}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -44,7 +56,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.6 }}
               className="text-lg text-gray-400 mb-8 max-w-md mx-auto lg:mx-0"
             >
-              Ingénieur des travaux en informatique, passionné par la création de solutions web et mobiles innovantes et modernes.
+              {getTranslation(language, 'hero.description')}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +65,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Link to="contact" smooth={true} duration={500}>
-                <Button>Me Contacter</Button>
+                <Button>{getTranslation(language, 'hero.contactMe')}</Button>
               </Link>
               <Button
                 onClick={handleDownloadCV}
@@ -63,7 +75,7 @@ const Hero = () => {
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
                 </svg>
-                Télécharger CV
+                {getTranslation(language, 'hero.downloadCV')}
               </Button>
             </motion.div>
           </motion.div>
@@ -116,7 +128,7 @@ const Hero = () => {
             }}
           >
             <p className="text-lg text-blue-400 font-semibold whitespace-nowrap inline-block">
-              Bienvenue sur mon portfolio ! Je suis ravi de partager mon travail avec vous.
+              {getTranslation(language, 'hero.welcomeMessage')}
             </p>
           </motion.div>
         </motion.div>

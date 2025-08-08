@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import Card from './UI/Card.jsx';
 import ProgressBar from './UI/ProgressBar.jsx';
+import { useLanguage } from '../contexts/LanguageContext';
+import { getTranslation } from '../translations/translations';
 
 const Skills = () => {
+  const { language } = useLanguage();
   const technicalSkills = [
     { name: 'Python', level: 85 },
     { name: 'Flutter', level: 80 },
@@ -12,7 +15,7 @@ const Skills = () => {
     { name: 'Angular', level: 65 },
     { name: 'Django', level: 75 },
     { name: 'Laravel', level: 60 },
-    
+
   ];
 
   const aiDataSkills = [
@@ -46,24 +49,9 @@ const Skills = () => {
     { name: 'Weight & Biases', level: 70 },
   ];
 
-  const personalSkills = [
-    'Leadership',
-    'Gestion de projet',
-    'Entrepreneuriat',
-    'Marketing digital',
-    'Présentation de projets',
-    'Rédaction CV/Lettre de motivation',
-    'Adaptabilité',
-    'Polyvalence',
-  ];
+  const personalSkills = getTranslation(language, 'skills.personalSkillsList');
 
-  const interests = [
-    'Développement IA et Machine Learning',
-    'Développement web et mobile',
-    'Entrepreneuriat et innovation',
-    'Veille technologique',
-    'Data Science',
-  ];
+  const interests = getTranslation(language, 'skills.interestsList');
 
   return (
     <section id="skills" className="py-20" style={{ backgroundColor: 'var(--bg-primary)' }}>
@@ -74,7 +62,7 @@ const Skills = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl font-bold text-center mb-12 text-blue-400"
         >
-          Mes Compétences
+          {getTranslation(language, 'skills.title')}
         </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <Card>
@@ -82,7 +70,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              Développement Web & Mobile
+              {getTranslation(language, 'skills.webMobile')}
             </h3>
             <div className="space-y-4">
               {technicalSkills.map((skill, index) => (
@@ -93,7 +81,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              IA & Data Science
+              {getTranslation(language, 'skills.aiDataScience')}
             </h3>
             <div className="space-y-4">
               {aiDataSkills.map((skill, index) => (
@@ -106,7 +94,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              API & Bases de Données
+              {getTranslation(language, 'skills.apiDatabase')}
             </h3>
             <div className="space-y-4">
               {apiDatabaseSkills.map((skill, index) => (
@@ -117,7 +105,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              Outils & Technologies
+              {getTranslation(language, 'skills.tools')}
             </h3>
             <div className="space-y-4">
               {toolsSkills.map((skill, index) => (
@@ -134,7 +122,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              Compétences Personnelles
+              {getTranslation(language, 'skills.personalSkills')}
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {personalSkills.map((skill, index) => (
@@ -143,7 +131,7 @@ const Skills = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="flex items-center text-gray-700"
+                  className="flex items-center text-white"
                 >
                   <svg className="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
@@ -159,7 +147,7 @@ const Skills = () => {
               <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
               </svg>
-              Centres d'Intérêt
+              {getTranslation(language, 'skills.interests')}
             </h3>
             <div className="grid grid-cols-1 gap-4">
               {interests.map((interest, index) => (
@@ -168,7 +156,7 @@ const Skills = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="flex items-center text-gray-700"
+                  className="flex items-center text-white"
                 >
                   <svg className="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
