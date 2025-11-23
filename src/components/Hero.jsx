@@ -10,8 +10,9 @@ const Hero = () => {
   const handleDownloadCV = () => {
     // Créer un lien temporaire pour télécharger le CV
     const link = document.createElement('a');
-    link.href = '/assets/CV_Soumana_DAMA.pdf'; // Assurez-vous que le fichier existe dans public/assets/
-    link.download = 'CV_Soumana_DAMA.pdf';
+    // Le fichier s'appelle "Soumana DAMA__CV.pdf" dans `public/assets`
+    link.href = '/assets/Soumana%20DAMA__CV.pdf';
+    link.download = 'Soumana DAMA__CV.pdf';
     link.click();
   };
 

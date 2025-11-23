@@ -253,8 +253,9 @@ const Contact = () => {
                   variant="secondary"
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/assets/CV_Soumana_DAMA.pdf';
-                    link.download = 'CV_Soumana_DAMA.pdf';
+                    // Le fichier présent dans `public/assets` contient un espace dans son nom
+                    link.href = '/assets/Soumana%20DAMA__CV.pdf';
+                    link.download = 'Soumana DAMA__CV.pdf';
                     link.click();
                   }}
                   className="flex items-center justify-center"
