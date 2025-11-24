@@ -66,12 +66,12 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Link to="contact" smooth={true} duration={500}>
-                <Button>{getTranslation(language, 'hero.contactMe')}</Button>
+                <Button className="w-full sm:flex-1">{getTranslation(language, 'hero.contactMe')}</Button>
               </Link>
               <Button
                 onClick={handleDownloadCV}
                 variant="secondary"
-                className="flex items-center"
+                className="w-full sm:flex-1 flex items-center justify-center"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
