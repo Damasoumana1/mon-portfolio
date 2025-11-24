@@ -19,7 +19,8 @@ export const translations = {
             description: "Passionné par le développement d'applications innovantes et l'intelligence artificielle, je crée des solutions technologiques qui font la différence.",
             downloadCV: "Télécharger CV",
             contactMe: "Me Contacter",
-            welcomeMessage: "Bienvenue sur mon portfolio ! Je suis ravi de partager mon travail avec vous."
+            welcomeMessage: "Bienvenue sur mon portfolio ! Je suis ravi de partager mon travail avec vous.",
+            pageTitle: "Mon Portfolio"
         },
 
         // About Section
@@ -47,9 +48,9 @@ export const translations = {
         // Formation Section
         formation: {
             title: "Ma Formation",
-            degree1: "",
-            school1: "",
-            years1: "",
+            degree1: "Licence : Informatique programmation et entreprenariat",
+            school1: "Burkina Institute of Technology-BIT",
+            years1: "2022 - 2025",
             degree2: "Baccalauréat : Série D",
             school2: "Lycée Privé Espoir du Faso",
             years2: "2021 - 2022"
@@ -186,7 +187,8 @@ export const translations = {
             description: "Passionate about developing innovative applications and artificial intelligence, I create technological solutions that make a difference.",
             downloadCV: "Download CV",
             contactMe: "Contact Me",
-            welcomeMessage: "Welcome to my portfolio! I'm excited to share my work with you."
+            welcomeMessage: "Welcome to my portfolio! I'm excited to share my work with you.",
+            pageTitle: "My Portfolio"
         },
 
         // About Section
