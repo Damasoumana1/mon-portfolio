@@ -22,6 +22,7 @@ const Skills = () => {
     { name: 'Développement IA', level: 80 },
     { name: 'TensorFlow/PyTorch', level: 75 },
     { name: 'OpenCV', level: 70 },
+    { name: 'Roboflow', level: 80 },
     { name: 'Pandas/NumPy', level: 85 },
     { name: 'Scikit-learn', level: 75 },
     { name: 'Matplotlib/Seaborn', level: 80 },
@@ -47,6 +48,29 @@ const Skills = () => {
     { name: 'VBA', level: 65 },
     { name: 'Streamlit', level: 75 },
     { name: 'Weight & Biases', level: 70 },
+  ];
+
+  // Added Tools & Technology items requested by user
+  // Git, UML, Jira, LaTeX
+  toolsSkills.push(
+    { name: 'Git', level: 85 },
+    { name: 'UML', level: 70 },
+    { name: 'Jira', level: 75 },
+    { name: 'LaTeX', level: 70 }
+  );
+
+  const deploymentSkills = [
+    { name: 'Netlify' },
+    { name: 'Hugging Face Spaces' },
+    { name: 'Vercel (base)' },
+    { name: 'Docker' },
+  ];
+
+  const iotSkills = [
+    { name: 'Arduino (basic knowledge)' },
+    { name: 'Wokwi (simulation, basic)' },
+    { name: 'Blynk (simulation, basic)' },
+    { name: 'Tinkercad (simulation, basic)' },
   ];
 
   const personalSkills = getTranslation(language, 'skills.personalSkillsList');
@@ -110,6 +134,34 @@ const Skills = () => {
             <div className="space-y-4">
               {toolsSkills.map((skill, index) => (
                 <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+              ))}
+            </div>
+            {/* Deployment & DevOps Tools */}
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-blue-600 flex items-center">
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+              </svg>
+              Deployment & DevOps Tools
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {deploymentSkills.map((d) => (
+                <span key={d.name} className="inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">
+                  {d.name}
+                </span>
+              ))}
+            </div>
+            {/* IoT skills */}
+            <h3 className="text-2xl font-semibold mt-6 mb-4 text-blue-600 flex items-center">
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+              </svg>
+              IoT
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {iotSkills.map((d) => (
+                <span key={d.name} className="inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">
+                  {d.name}
+                </span>
               ))}
             </div>
           </Card>
