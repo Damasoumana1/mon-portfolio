@@ -125,18 +125,7 @@ const Skills = () => {
               ))}
             </div>
 
-            {/* IoT (same style as AI & Data) */}
-            <h3 className="text-2xl font-semibold mt-8 mb-6 text-blue-600 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-              </svg>
-              IoT
-            </h3>
-            <div className="space-y-4">
-              {iotSkills.map((skill) => (
-                <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
-              ))}
-            </div>
+            {/* IoT moved to right card to balance layout */}
           </Card>
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-blue-600 flex items-center">
@@ -161,7 +150,17 @@ const Skills = () => {
                 <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
               ))}
             </div>
-            {/* removed badges here — Deployment & IoT moved to left card as ProgressBars */}
+            <h3 className="text-2xl font-semibold mt-8 mb-6 text-blue-600 flex items-center">
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+              </svg>
+              IoT
+            </h3>
+            <div className="space-y-4">
+              {iotSkills.map((skill) => (
+                <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+              ))}
+            </div>
           </Card>
         </div>
 
