@@ -60,17 +60,17 @@ const Skills = () => {
   );
 
   const deploymentSkills = [
-    { name: 'Netlify' },
-    { name: 'Hugging Face Spaces' },
-    { name: 'Vercel (base)' },
-    { name: 'Docker' },
+    { name: 'Netlify', level: 80 },
+    { name: 'Hugging Face Spaces', level: 70 },
+    { name: 'Vercel (base)', level: 70 },
+    { name: 'Docker', level: 75 },
   ];
 
   const iotSkills = [
-    { name: 'Arduino (basic knowledge)' },
-    { name: 'Wokwi (simulation, basic)' },
-    { name: 'Blynk (simulation, basic)' },
-    { name: 'Tinkercad (simulation, basic)' },
+    { name: 'Arduino (basic knowledge)', level: 60 },
+    { name: 'Wokwi (simulation, basic)', level: 55 },
+    { name: 'Blynk (simulation, basic)', level: 55 },
+    { name: 'Tinkercad (simulation, basic)', level: 55 },
   ];
 
   const personalSkills = getTranslation(language, 'skills.personalSkillsList');
@@ -112,6 +112,31 @@ const Skills = () => {
                 <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
               ))}
             </div>
+            {/* Deployment & DevOps Tools (moved to left, same style as AI & Data) */}
+            <h3 className="text-2xl font-semibold mt-8 mb-6 text-blue-600 flex items-center">
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+              </svg>
+              Deployment & DevOps Tools
+            </h3>
+            <div className="space-y-4">
+              {deploymentSkills.map((skill) => (
+                <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+              ))}
+            </div>
+
+            {/* IoT (same style as AI & Data) */}
+            <h3 className="text-2xl font-semibold mt-8 mb-6 text-blue-600 flex items-center">
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+              </svg>
+              IoT
+            </h3>
+            <div className="space-y-4">
+              {iotSkills.map((skill) => (
+                <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+              ))}
+            </div>
           </Card>
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-blue-600 flex items-center">
@@ -136,34 +161,7 @@ const Skills = () => {
                 <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
               ))}
             </div>
-            {/* Deployment & DevOps Tools */}
-            <h3 className="text-2xl font-semibold mt-8 mb-4 text-blue-600 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-              </svg>
-              Deployment & DevOps Tools
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {deploymentSkills.map((d) => (
-                <span key={d.name} className="inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">
-                  {d.name}
-                </span>
-              ))}
-            </div>
-            {/* IoT skills */}
-            <h3 className="text-2xl font-semibold mt-6 mb-4 text-blue-600 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-              </svg>
-              IoT
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {iotSkills.map((d) => (
-                <span key={d.name} className="inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">
-                  {d.name}
-                </span>
-              ))}
-            </div>
+            {/* removed badges here — Deployment & IoT moved to left card as ProgressBars */}
           </Card>
         </div>
 
