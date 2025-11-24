@@ -47,9 +47,9 @@ export const translations = {
         // Formation Section
         formation: {
             title: "Ma Formation",
-            degree1: "Licence : Informatique programmation et entreprenariat",
-            school1: "Burkina Institute of Technology-BIT",
-            years1: "2022 - 2025",
+            degree1: "",
+            school1: "",
+            years1: "",
             degree2: "Baccalauréat : Série D",
             school2: "Lycée Privé Espoir du Faso",
             years2: "2021 - 2022"
