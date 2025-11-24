@@ -48,25 +48,25 @@ const About = () => {
                 <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
-                <span>Ouagadougou, Burkina Faso</span>
+                <span>{getTranslation(language, 'about.location')}: Ouagadougou, Burkina Faso</span>
               </div>
               <div className="flex items-center">
                 <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h8v2H6v-2zm0 4h8v2H6v-2zm10 0h2v2h-2v-2zm0-4h2v2h-2v-2z" />
                 </svg>
-                <span>+226 64011171</span>
+                <span>{getTranslation(language, 'about.phone')}: +226 64011171</span>
               </div>
               <div className="flex items-center">
                 <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h8v2H6v-2zm0 4h8v2H6v-2zm10 0h2v2h-2v-2zm0-4h2v2h-2v-2z" />
                 </svg>
-                <span>soumanadama93@gmail.com</span>
+                <span>{getTranslation(language, 'about.email')}: soumanadama93@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
                 </svg>
-                <span>01/04/2001</span>
+                <span>{getTranslation(language, 'about.birthDate')}: 01/04/2001</span>
               </div>
             </div>
           </motion.div>
@@ -79,7 +79,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4 text-blue-400">{getTranslation(language, 'about.languages')}</h3>
             <div className="space-y-4">
-              <p className="text-gray-300">▪ French (advance)│English(Professional working proficiency) │Dafing(native)│Dioula</p>
+              <p className="text-gray-300">{getTranslation(language, 'about.languagesList')}</p>
             </div>
           </motion.div>
         </div>

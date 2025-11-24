@@ -38,7 +38,12 @@ export const translations = {
             whoAmIText1: "Ingénieur des travaux en informatique, je suis passionné par l'informatique et le développement web et mobile. Motivé, curieux et en quête d'expérience professionnelle, je cherche à mettre en pratique mes compétences en programmation pour contribuer à des projets innovants.",
             whoAmIText2: "Ma formation académique et mes projets personnels m'ont permis de développer des compétences techniques solides en programmation et en conception de logiciels. Je suis constamment à la recherche de nouvelles connaissances et technologies pour améliorer mes compétences.",
             personalInfo: "Informations Personnelles",
+            location: "Localisation",
+            phone: "Téléphone",
+            email: "E-mail",
+            birthDate: "Date de naissance",
             languages: "Langues",
+            languagesList: "▪ Français (avancé)│Anglais (maîtrise professionnelle)│Dafing (natif)│Dioula",
             french: "Français",
             english: "Anglais",
             native: "Natif",
@@ -53,7 +58,18 @@ export const translations = {
             years1: "2022 - 2025",
             degree2: "Baccalauréat : Série D",
             school2: "Lycée Privé Espoir du Faso",
-            years2: "2021 - 2022"
+            years2: "2021 - 2022",
+            // Bachelor Details (EN translated to FR context)
+            bachelorSchool: "Burkina Institute of Technology, Koudougou, Burkina Faso",
+            bachelorDegree: "B.Sc. en informatique",
+            bachelorSpecialization: "Spécialisation : Programmation et Entrepreneuriat",
+            bachelorCGPA: "CGPA Équivalent : 3.7/4.0",
+            bachelorThesis: "Défense de mémoire de 3e année : Note 19/20 (équivalent à une note A 4.0/4.0) — Très bonne distinction",
+            bachelorThesisTitle: "Développement d'une application mobile intelligente pour la détection automatisée des maladies de l'oignon à l'aide de la vision par ordinateur – Cas du Burkina Faso.",
+            bachelorThesisSupervisor: "Supervisé par Dr Rachid Gaetan NABOLLE du BIT.",
+            bachelorProject: "Projet — OnionScan",
+            bachelorProjectDesc: "Développement de OnionScan, une application basée sur le deep learning utilisant YOLOv10-X pour la détection en temps réel des maladies des cultures d'oignons.",
+            bachelorProjectDetails: "Intégration d'imagerie par smartphone et drone pour l'agriculture durable."
         },
 
         // Skills Section
@@ -206,7 +222,12 @@ export const translations = {
             whoAmIText1: "Computer engineering technician, I am passionate about computer science and web and mobile development. Motivated, curious and seeking professional experience, I seek to put my programming skills into practice to contribute to innovative projects.",
             whoAmIText2: "My academic training and personal projects have allowed me to develop solid technical skills in programming and software design. I am constantly looking for new knowledge and technologies to improve my skills.",
             personalInfo: "Personal Information",
+            location: "Location",
+            phone: "Phone",
+            email: "Email",
+            birthDate: "Birth Date",
             languages: "Languages",
+            languagesList: "▪ French (advanced)│English (Professional working proficiency)│Dafing (native)│Dioula",
             french: "French",
             english: "English",
             native: "Native",
@@ -221,7 +242,18 @@ export const translations = {
             years1: "2022 - 2025",
             degree2: "High School Diploma: Science Series D",
             school2: "Lycée Privé Espoir du Faso",
-            years2: "2021 - 2022"
+            years2: "2021 - 2022",
+            // Bachelor Details
+            bachelorSchool: "Burkina Institute of Technology, Koudougou, Burkina Faso",
+            bachelorDegree: "B.Sc. in Computer Science",
+            bachelorSpecialization: "Specialization: Programming and Entrepreneurship",
+            bachelorCGPA: "CGPA Equivalent: 3.7/4.0",
+            bachelorThesis: "Third year Bachelor's thesis defense: Grade 19/20 (equivalent to an A grade 4.0/4.0) — Excellent distinction",
+            bachelorThesisTitle: "Development of an Intelligent Mobile Application for Automated Detection of Onion Diseases Using Computer Vision – Case of Burkina Faso.",
+            bachelorThesisSupervisor: "Supervised by Dr Rachid Gaetan NABOLLE of BIT.",
+            bachelorProject: "Project — OnionScan",
+            bachelorProjectDesc: "Built OnionScan, a deep learning–based application using YOLOv10-X for real-time disease detection on onion crops.",
+            bachelorProjectDetails: "Integrated smartphone & drone imagery for sustainable agriculture."
         },
 
         // Skills Section
