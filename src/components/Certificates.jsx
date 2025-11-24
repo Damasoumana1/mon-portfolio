@@ -344,6 +344,18 @@ const certificates = [
     },
     image: "/assets/certificates/cert25.jpg"
   },
+  {
+    id: 26,
+    title: "FORCE N Senegal: AI & Data",
+    organization: "FORCE N Senegal",
+    date: "2025",
+    category: "Data / IA",
+    description: {
+      fr: "FORCE N Senegal : AI & Data (Intelligence artificielle, collecte et pré-traitement des données, NLP & Computer Vision, ML/DL, déploiement & monitoring)",
+      en: "FORCE N Senegal: AI & Data (Artificial Intelligence, Data Collection and pre-processing, Natural Language Processing (NLP) & Computer Vision, ML/DL, Deployment & Monitoring)"
+    },
+    image: "/assets/certificates/cert26.jpg"
+  },
 ];
 
 const groupByCategory = (certs) => {

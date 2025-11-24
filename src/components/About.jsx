@@ -79,14 +79,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-semibold mb-4 text-blue-400">{getTranslation(language, 'about.languages')}</h3>
             <div className="space-y-4">
-              <div className="flex items-center">
-                <span className="mr-2">{getTranslation(language, 'about.french')}</span>
-                <span className="text-blue-400">{getTranslation(language, 'about.native')}</span>
-              </div>
-              <div className="flex items-center">
-                <span className="mr-2">{getTranslation(language, 'about.english')}</span>
-                <span className="text-blue-400">{getTranslation(language, 'about.intermediate')}</span>
-              </div>
+              <p className="text-gray-300">▪ French (advance)│English(Professional working proficiency) │Dafing(native)│Dioula</p>
             </div>
           </motion.div>
         </div>
