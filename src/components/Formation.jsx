@@ -27,6 +27,32 @@ const Formation = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center"
           >
+            {/* Bachelor (detailed, responsive) */}
+            <div className="w-full mb-8">
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-md break-words whitespace-normal">
+                <h3 className="text-lg md:text-xl font-semibold text-blue-600 mb-2">Burkina Institute of Technology, Koudougou, Burkina Faso</h3>
+                <ul className="list-disc pl-5 text-sm md:text-base text-gray-600 space-y-1 mb-3">
+                  <li><strong>B.Sc. in computer science</strong></li>
+                  <li>Specialization: Programing and Entrepreneurship</li>
+                  <li>CGPA Equivalent: 3.7/4.0</li>
+                </ul>
+
+                <div className="text-sm md:text-base text-gray-600 mb-3">
+                  <p className="font-semibold">Third year Bachelor’s thesis defense: Grade 19/20 (equivalent to an A grade 4.0/4.0) — Excellent distinction</p>
+                  <p className="mt-2">“Development of an Intelligent Mobile Application for Automated Detection of Onion Diseases Using Computer Vision – Case of Burkina Faso.”</p>
+                  <p className="mt-2">Supervised by Dr Rachid Gaetan NABOLLE of BIT.</p>
+                </div>
+
+                <div className="text-sm md:text-base text-gray-600 mb-3">
+                  <p className="font-semibold mb-1">Project — OnionScan</p>
+                  <p className="mb-1">Built <strong>OnionScan</strong>, a deep learning–based application using <strong>YOLOv10-X</strong> for real-time disease detection on onion crops.</p>
+                  <p>Integrated smartphone &amp; drone imagery for sustainable agriculture.</p>
+                </div>
+
+                <p className="text-sm md:text-base text-gray-600 font-semibold">2022 - 2025</p>
+              </div>
+            </div>
+
             {/* Item 1 (right on desktop, stacked on mobile) */}
             <div className="flex flex-col md:flex-row items-center mb-8 w-full">
               <div className="md:w-5/12 w-full"></div>
@@ -57,9 +83,6 @@ const Formation = () => {
               <div className="md:w-5/12 w-full order-1 md:order-3"></div>
             </div>
           </motion.div>
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-400" style={{ top: '-20px' }}>
-            {/* vertical timeline line (hidden on small screens) */}
-          </div>
         </div>
       </div>
     </section>
