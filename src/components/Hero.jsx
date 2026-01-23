@@ -3,11 +3,15 @@ import { Link } from 'react-scroll';
 import Button from './UI/Button.jsx';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
+import { trackCVDownload } from '../utils/analytics';
 
 const Hero = () => {
   const { language } = useLanguage();
 
   const handleDownloadCV = () => {
+    // Track the CV download event
+    trackCVDownload();
+
     // Créer un lien temporaire pour télécharger le CV
     const link = document.createElement('a');
     // Le fichier s'appelle "Soumana DAMA__CV.pdf" dans `public/assets`

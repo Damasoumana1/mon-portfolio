@@ -4,6 +4,7 @@ import Button from './UI/Button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
 import { projectsData } from '../data/projectsData';
+import { trackProjectView, trackProjectVideoView } from '../utils/analytics';
 
 const Projects = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -66,7 +67,10 @@ const Projects = () => {
                 <div className="flex gap-2 flex-wrap">
                   <Button
                     variant="primary"
-                    onClick={() => window.open(project.url, '_blank')}
+                    onClick={() => {
+                      trackProjectView(project.title);
+                      window.open(project.url, '_blank');
+                    }}
                     className="text-sm flex-1 min-w-0"
                   >
                     {getTranslation(language, 'projects.viewProject')}
@@ -74,7 +78,10 @@ const Projects = () => {
                   {project.videoUrl && (
                     <Button
                       variant="secondary"
-                      onClick={() => window.open(project.videoUrl, '_blank')}
+                      onClick={() => {
+                        trackProjectVideoView(project.title);
+                        window.open(project.videoUrl, '_blank');
+                      }}
                       className="text-sm flex-1 min-w-0 flex items-center justify-center"
                     >
                       <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">

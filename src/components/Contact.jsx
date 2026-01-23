@@ -5,6 +5,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
+import { trackContactFormSubmit, trackCVDownload } from '../utils/analytics';
 
 const Contact = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -52,10 +53,12 @@ const Contact = () => {
       if (result.status === 200) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
+        trackContactFormSubmit(true);
       }
     } catch (error) {
       console.error('Erreur lors de l\'envoi:', error);
       setSubmitStatus('error');
+      trackContactFormSubmit(false);
     } finally {
       setIsSubmitting(false);
     }
@@ -252,6 +255,7 @@ const Contact = () => {
                   type="button"
                   variant="secondary"
                   onClick={() => {
+                    trackCVDownload();
                     const link = document.createElement('a');
                     // Le fichier présent dans `public/assets` contient un espace dans son nom
                     link.href = '/assets/Soumana%20DAMA__CV.pdf';

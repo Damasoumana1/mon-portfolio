@@ -62,12 +62,6 @@ const About = () => {
                 </svg>
                 <span>{getTranslation(language, 'about.email')}: soumanadama93@gmail.com</span>
               </div>
-              <div className="flex items-center">
-                <svg className="w-6 h-6 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-                </svg>
-                <span>{getTranslation(language, 'about.birthDate')}: 01/04/2001</span>
-              </div>
             </div>
           </motion.div>
           <motion.div
