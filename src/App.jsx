@@ -52,7 +52,7 @@ function AppContent() {
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       <Navbar />
       <Hero />
-      <Suspense fallback={<LoadingFallback />}>
+      <Suspense key={language} fallback={<LoadingFallback />}>
         <About />
         <Formation />
         <Skills />
