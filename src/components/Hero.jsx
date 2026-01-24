@@ -108,6 +108,7 @@ const Hero = () => {
                   src="/assets/pro Dama.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
+                  fetchpriority="high"
                 />
               </motion.div>
             </div>

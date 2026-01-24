@@ -45,3 +45,10 @@ body {
   background-color: #3b82f6; /* bg-blue-500 */
   border-radius: 9999px; /* rounded-full */
 }
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

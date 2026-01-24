@@ -39,6 +39,8 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {project.featured && (
                   <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold">
