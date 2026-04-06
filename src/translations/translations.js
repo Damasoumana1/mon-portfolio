@@ -74,29 +74,83 @@ export const translations = {
         // Skills Section
         skills: {
             title: "Mes Compétences",
-            webMobile: "Développement Web & Mobile",
+            webMobile: "Frontend & Mobile",
             aiDataScience: "IA & Data Science",
-            apiDatabase: "API & Bases de Données",
-            tools: "Outils & Technologies",
+            apiDatabase: "Backend & Bases de Données",
+            tools: "Outils & Design",
+            deployment: "Déploiement & DevOps",
+            cybersecurity: "Cybersécurité",
+            iot: "IoT & Systèmes Embarqués",
             personalSkills: "Compétences Personnelles",
             interests: "Centres d'Intérêt",
             personalSkillsList: [
                 "Leadership",
-                "Gestion de projet",
-                "Entrepreneuriat",
+                "Gestion de projet entrepreneuriale",
                 "Marketing digital",
                 "Présentation de projets",
                 "Rédaction CV/Lettre de motivation",
                 "Adaptabilité",
-                "Polyvalence"
+                "Polyvalence",
+                "Recherche technique"
             ],
             interestsList: [
                 "Développement IA et Machine Learning",
+                "Agentic AI & RAG",
                 "Développement web et mobile",
                 "Entrepreneuriat et innovation",
                 "Veille technologique",
-                "Data Science"
-            ]
+                "Data Science",
+                "Voyages"
+            ],
+            items: {
+                // IA & Data
+                aiDev: "Développement IA",
+                tf_pytorch: "TensorFlow / PyTorch",
+                cv_opencv: "Computer Vision (OpenCV)",
+                yolo_detection: "Object Detection (YOLOv10-X)",
+                agentic_ai: "Agentic AI (LangGraph)",
+                rag: "RAG (Retrieval-Augmented Generation)",
+                vector_db: "Bases de Données Vectorielles (Qdrant)",
+                pandas_numpy: "Analyse de données (Pandas/NumPy)",
+                matplotlib_seaborn: "Visualisation de données",
+                scipy_sklearn: "SciPy / Scikit-learn",
+                nlp_llm: "NLP & LLM Reasoning",
+                lstm_transformers: "LSTM & Transformers",
+                tokenization: "Tokenization & Séquences Temporelles",
+                image_segmentation: "Segmentation d'images",
+                
+                // Web/Mobile & Backend
+                js_ts: "JavaScript / TypeScript",
+                react_vue: "React.js / Vue.js",
+                flutter_rn: "Flutter / React Native",
+                php_laravel: "PHP (Laravel / WordPress)",
+                python_backend: "Python (FastAPI / Django / Flask)",
+                rest_api: "Architecture RESTful API & Swagger",
+                socket_io: "Real-time (Socket.io)",
+                fintech_api: "Intégration API Fintech",
+                
+                // Databases & DevOps
+                sql_nosql: "PostgreSQL / MySQL / MongoDB",
+                redis_supabase: "Redis (Upstash) / Supabase",
+                docker: "Conteneurisation (Docker)",
+                huggingface: "Hugging Face Spaces / Gradio",
+                cloud_deploy: "Vercel / Netlify / LWS / Hetzner",
+                
+                // Tools & Design
+                git: "Version Control (Git/GitHub/GitLab)",
+                jira_uml: "Jira / UML",
+                figma_canva: "Figma / Canva",
+                ms_office: "Microsoft Office & VBA",
+                latex: "Rédaction scientifique (LaTeX)",
+                weight_biases: "Weights & Biases / Roboflow",
+                
+                // IoT & Others
+                iot_c: "C (Systèmes Embarqués)",
+                arduino: "Arduino & Microcontrôleurs",
+                iot_sim: "Wokwi / Blynk / Tinkercad",
+                cyber_best: "Sécurité & Gestion des accès",
+                marketing_digital: "Marketing Digital"
+            }
         },
 
         // Experience Section
@@ -116,7 +170,8 @@ export const translations = {
             viewVideo: "Voir la Vidéo",
             mainProject: "Projet Principal",
             company: "Entreprise",
-            location: "Lieu"
+            location: "Lieu",
+            comingSoon: "À venir"
         },
 
         // Certificates Section
@@ -245,7 +300,7 @@ export const translations = {
             bachelorSchool: "Burkina Institute of Technology, Koudougou, Burkina Faso",
             bachelorDegree: "B.Sc. in Computer Science",
             bachelorSpecialization: "Specialization: Programming and Entrepreneurship",
-            bachelorCGPA: "CGPA Equivalent: 3.7/4.0",
+                bachelorCGPA: "CGPA Equivalent: 3.7/4.0",
             bachelorThesis: "Third year Bachelor's thesis defense: Grade 19/20 (equivalent to an A grade 4.0/4.0) — Excellent distinction",
             bachelorThesisTitle: "Development of an Intelligent Mobile Application for Automated Detection of Onion Diseases Using Computer Vision – Case of Burkina Faso.",
             bachelorThesisSupervisor: "Supervised by Dr Rachid Gaetan NABOLLE of BIT.",
@@ -257,29 +312,83 @@ export const translations = {
         // Skills Section
         skills: {
             title: "My Skills",
-            webMobile: "Web & Mobile Development",
+            webMobile: "Frontend & Mobile",
             aiDataScience: "AI & Data Science",
-            apiDatabase: "API & Databases",
-            tools: "Tools & Technologies",
+            apiDatabase: "Backend & Databases",
+            tools: "Tools & Design",
+            deployment: "Deployment & DevOps",
+            cybersecurity: "Cybersecurity",
+            iot: "IoT & Embedded Systems",
             personalSkills: "Personal Skills",
             interests: "Interests",
             personalSkillsList: [
                 "Leadership",
-                "Project Management",
-                "Entrepreneurship",
+                "Entrepreneurial Project Management",
                 "Digital Marketing",
                 "Project Presentation",
                 "CV/Cover Letter Writing",
                 "Adaptability",
-                "Versatility"
+                "Versatility",
+                "Technical Research"
             ],
             interestsList: [
                 "AI and Machine Learning Development",
+                "Agentic AI & RAG",
                 "Web and Mobile Development",
                 "Entrepreneurship and Innovation",
                 "Technology Watch",
-                "Data Science"
-            ]
+                "Data Science",
+                "Traveling"
+            ],
+            items: {
+                // AI & Data
+                aiDev: "AI Development",
+                tf_pytorch: "TensorFlow / PyTorch",
+                cv_opencv: "Computer Vision (OpenCV)",
+                yolo_detection: "Object Detection (YOLOv10-X)",
+                agentic_ai: "Agentic AI (LangGraph)",
+                rag: "RAG (Retrieval-Augmented Generation)",
+                vector_db: "Vector Databases (Qdrant)",
+                pandas_numpy: "Data Analysis (Pandas/NumPy)",
+                matplotlib_seaborn: "Data Visualization",
+                scipy_sklearn: "SciPy / Scikit-learn",
+                nlp_llm: "NLP & LLM Reasoning",
+                lstm_transformers: "LSTM & Transformers",
+                tokenization: "Tokenization & Temporal Sequences",
+                image_segmentation: "Image Segmentation",
+                
+                // Web/Mobile & Backend
+                js_ts: "JavaScript / TypeScript",
+                react_vue: "React.js / Vue.js",
+                flutter_rn: "Flutter / React Native",
+                php_laravel: "PHP (Laravel / WordPress)",
+                python_backend: "Python (FastAPI / Django / Flask)",
+                rest_api: "RESTful API Architecture & Swagger",
+                socket_io: "Real-time (Socket.io)",
+                fintech_api: "Fintech API Integration",
+                
+                // Databases & DevOps
+                sql_nosql: "PostgreSQL / MySQL / MongoDB",
+                redis_supabase: "Redis (Upstash) / Supabase",
+                docker: "Containerization (Docker)",
+                huggingface: "Hugging Face Spaces / Gradio",
+                cloud_deploy: "Vercel / Netlify / LWS / Hetzner",
+                
+                // Tools & Design
+                git: "Version Control (Git/GitHub/GitLab)",
+                jira_uml: "Jira / UML",
+                figma_canva: "Figma / Canva",
+                ms_office: "Microsoft Office & VBA",
+                latex: "Scientific Writing (LaTeX)",
+                weight_biases: "Weights & Biases / Roboflow",
+                
+                // IoT & Others
+                iot_c: "C (Embedded Systems)",
+                arduino: "Arduino & Microcontrollers",
+                iot_sim: "Wokwi / Blynk / Tinkercad",
+                cyber_best: "Security & Access Management",
+                marketing_digital: "Digital Marketing"
+            }
         },
 
         // Experience Section
@@ -299,7 +408,8 @@ export const translations = {
             viewVideo: "View Video",
             mainProject: "Main Project",
             company: "Company",
-            location: "Location"
+            location: "Location",
+            comingSoon: "Coming Soon"
         },
 
         // Certificates Section

@@ -11,7 +11,9 @@ body {
 /* Dark theme (default) */
 .dark {
   --bg-primary: #1a202c; /* bg-gray-900 */
+  --bg-primary-rgb: 26, 32, 44;
   --bg-secondary: #2d3748; /* bg-gray-800 */
+  --bg-secondary-rgb: 45, 55, 72;
   --text-primary: #ffffff; /* text-white */
   --text-secondary: #e2e8f0; /* text-gray-200 */
   --accent: #3b82f6; /* blue-500 */
@@ -21,9 +23,11 @@ body {
 /* Light theme */
 .light {
   --bg-primary: #f8fafc; /* slate-50 */
+  --bg-primary-rgb: 248, 250, 252;
   --bg-secondary: #e2e8f0; /* slate-200 */
+  --bg-secondary-rgb: 226, 232, 240;
   --text-primary: #1e293b; /* slate-800 */
-  --text-secondary: #64748b; /* slate-500 */
+  --text-secondary: #475569; /* slate-600 (better contrast than 500) */
   --accent: #3b82f6; /* blue-500 */
   --accent-hover: #2563eb; /* blue-600 */
 }

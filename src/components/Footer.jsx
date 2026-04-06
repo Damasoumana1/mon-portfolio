@@ -2,18 +2,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
-import { useEffect, useState } from 'react';
 
 const Footer = () => {
   const { language } = useLanguage();
-  const [visits, setVisits] = useState(null);
-
-  useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/soumanadama-portfolio/visits')
-      .then(res => res.json())
-      .then(data => setVisits(data.value))
-      .catch(() => setVisits('—'));
-  }, []);
 
   return (
     <footer className="py-8" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -89,8 +80,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-700 pt-6">
           <div className="flex flex-col items-center mb-4 sm:mb-0">
-            <p className="text-gray-400 text-sm">© 2025 Soumana DAMA. {getTranslation(language, 'footer.rights')}</p>
-            <p className="text-xs text-blue-300 mt-1">{visits !== null ? `👁️ ${visits} visiteurs` : '...'}</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Soumana DAMA. {getTranslation(language, 'footer.rights')}</p>
           </div>
           <div className="flex space-x-6">
             <motion.a

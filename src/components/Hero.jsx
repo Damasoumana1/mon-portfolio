@@ -14,9 +14,9 @@ const Hero = () => {
 
     // Créer un lien temporaire pour télécharger le CV
     const link = document.createElement('a');
-    // Le fichier s'appelle "Soumana DAMA__CV.pdf" dans `public/assets`
-    link.href = '/assets/Soumana%20DAMA__CV.pdf';
-    link.download = 'Soumana DAMA__CV.pdf';
+    // Le fichier s'appelle "Soumana_DAMA_CV.pdf" dans `public/assets`
+    link.href = '/assets/Soumana_DAMA_CV.pdf';
+    link.download = 'Soumana_DAMA_CV.pdf';
     link.click();
   };
 
@@ -77,8 +77,8 @@ const Hero = () => {
                 variant="secondary"
                 className="w-full sm:flex-1 flex items-center justify-center"
               >
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V3" />
                 </svg>
                 {getTranslation(language, 'hero.downloadCV')}
               </Button>
@@ -105,8 +105,8 @@ const Hero = () => {
               >
                 {/* Remplacez cette image par votre photo de profil */}
                 <img
-                  src="/assets/pro Dama.jpg"
-                  alt="Profile"
+                  src="/assets/pro_Dama.jpg"
+                  alt="Soumana DAMA"
                   className="w-full h-full object-cover"
                   fetchpriority="high"
                 />
@@ -119,24 +119,11 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-8 text-center overflow-hidden"
+          className="mt-8 text-center"
         >
-          <motion.div
-            className="inline-block"
-            animate={{
-              x: ['-100%', '100%'],
-            }}
-            transition={{
-              duration: 12,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "linear"
-            }}
-          >
-            <p className="text-lg text-blue-400 font-semibold whitespace-nowrap inline-block">
-              {getTranslation(language, 'hero.welcomeMessage')}
-            </p>
-          </motion.div>
+          <p className="text-lg text-blue-400/80 font-medium italic">
+            {getTranslation(language, 'hero.welcomeMessage')}
+          </p>
         </motion.div>
         {/* Flèche animée */}
         <motion.div

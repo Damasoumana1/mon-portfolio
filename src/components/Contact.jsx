@@ -8,7 +8,9 @@ import { getTranslation } from '../translations/translations';
 import { trackContactFormSubmit, trackCVDownload } from '../utils/analytics';
 
 const Contact = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+  const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref: infoRef, inView: infoInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref: formRef, inView: formInView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const { language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
@@ -33,9 +35,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      // Debug: Affiche la clé publique EmailJS utilisée
-      console.log('USER_ID:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-      // Configuration EmailJS avec les vraies clés
+      // Configuration EmailJS
       const result = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID, // Service ID
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template ID
@@ -68,9 +68,9 @@ const Contact = () => {
     <section id="contact" className="py-20 min-h-screen flex items-center" style={{ backgroundColor: 'var(--bg-primary)' }}>
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
-          ref={ref}
+          ref={titleRef}
           initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-4xl font-bold text-center mb-12 text-blue-400"
         >
@@ -78,9 +78,9 @@ const Contact = () => {
         </motion.h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
-            ref={ref}
+            ref={infoRef}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            animate={infoInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="p-8 rounded-lg shadow-lg flex flex-col justify-center" style={{ backgroundColor: 'var(--bg-secondary)' }}
           >
@@ -128,9 +128,9 @@ const Contact = () => {
             </div>
           </motion.div>
           <motion.div
-            ref={ref}
+            ref={formRef}
             initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            animate={formInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="p-8 rounded-lg shadow-lg" style={{ backgroundColor: 'var(--bg-secondary)' }}
           >
@@ -224,7 +224,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="relative">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium mb-1" style={{ color: 'var(--text-secondary)' }}>
                   {getTranslation(language, 'contact.messageRequired')}
                 </label>
                 <div className="flex items-start">
@@ -257,15 +257,14 @@ const Contact = () => {
                   onClick={() => {
                     trackCVDownload();
                     const link = document.createElement('a');
-                    // Le fichier présent dans `public/assets` contient un espace dans son nom
-                    link.href = '/assets/Soumana%20DAMA__CV.pdf';
-                    link.download = 'Soumana DAMA__CV.pdf';
+                    link.href = '/assets/Soumana_DAMA_CV.pdf';
+                    link.download = 'Soumana_DAMA_CV.pdf';
                     link.click();
                   }}
                   className="flex items-center justify-center"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z" />
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V3" />
                   </svg>
                   {getTranslation(language, 'contact.downloadCV')}
                 </Button>

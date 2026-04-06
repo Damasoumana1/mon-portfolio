@@ -28,7 +28,6 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              ref={ref}
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -41,6 +40,10 @@ const Projects = () => {
                   className="w-full h-48 object-cover"
                   loading="lazy"
                   decoding="async"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = `https://placehold.co/600x400/1a202c/3b82f6?text=${encodeURIComponent(project.title)}`;
+                  }}
                 />
                 {project.featured && (
                   <div className="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold">
@@ -50,12 +53,12 @@ const Projects = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-400 mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-3 text-sm">{project.description}</p>
+                <p className="mb-3 text-sm" style={{ color: 'var(--text-secondary)' }}>{project.description}</p>
                 <div className="mb-3">
-                  <p className="text-xs text-gray-400 mb-1">
+                  <p className="text-xs mb-1" style={{ color: 'var(--text-secondary)', opacity: 0.8 }}>
                     <span className="font-semibold">{getTranslation(language, 'projects.company')}:</span> {project.company}
                   </p>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs" style={{ color: 'var(--text-secondary)', opacity: 0.8 }}>
                     <span className="font-semibold">{getTranslation(language, 'projects.location')}:</span> {project.location}
                   </p>
                 </div>
@@ -68,14 +71,17 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-2 flex-wrap">
                   <Button
-                    variant="primary"
+                    variant={project.url === '#' ? 'secondary' : 'primary'}
                     onClick={() => {
-                      trackProjectView(project.title);
-                      window.open(project.url, '_blank');
+                      if (project.url !== '#') {
+                        trackProjectView(project.title);
+                        window.open(project.url, '_blank');
+                      }
                     }}
-                    className="text-sm flex-1 min-w-0"
+                    className={`text-sm flex-1 min-w-0 ${project.url === '#' ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    disabled={project.url === '#'}
                   >
-                    {getTranslation(language, 'projects.viewProject')}
+                    {project.url === '#' ? getTranslation(language, 'projects.comingSoon') || 'À venir' : getTranslation(language, 'projects.viewProject')}
                   </Button>
                   {project.videoUrl && (
                     <Button

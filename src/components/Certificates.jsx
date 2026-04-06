@@ -6,6 +6,18 @@ import { useState } from 'react';
 
 const certificates = [
   {
+    id: 0,
+    title: "Workshop on Quantum Computing",
+    organization: "Indian Institute of Science (IISc), Bengaluru",
+    date: "2026",
+    category: "Data / IA",
+    description: {
+      fr: "Formation intensive sur les algorithmes quantiques (VQE, Quantum Walks), les qubits supraconducteurs et les circuits quantiques à l'IISc.",
+      en: "Intensive workshop on Quantum algorithms (VQE, Quantum Walks), superconducting qubits, and quantum circuits at IISc."
+    },
+    image: "/QC_certificate.jpg"
+  },
+  {
     id: 1,
     title: "From Zero to Hero - Digital Product Development from Scratch",
     organization: "Technical University of Munich",
