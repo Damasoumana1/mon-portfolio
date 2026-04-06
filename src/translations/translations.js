@@ -74,7 +74,7 @@ export const translations = {
         // Skills Section
         skills: {
             title: "Mes Compétences",
-            webMobile: "Frontend & Mobile",
+            webMobile: "Frontend Web & Mobile",
             aiDataScience: "IA & Data Science",
             apiDatabase: "Backend & Bases de Données",
             tools: "Outils & Design",
@@ -312,7 +312,7 @@ export const translations = {
         // Skills Section
         skills: {
             title: "My Skills",
-            webMobile: "Frontend & Mobile",
+            webMobile: "Frontend Web & Mobile",
             aiDataScience: "AI & Data Science",
             apiDatabase: "Backend & Databases",
             tools: "Tools & Design",
