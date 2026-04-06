@@ -70,19 +70,26 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-2 flex-wrap">
-                  <Button
-                    variant={project.url === '#' ? 'secondary' : 'primary'}
-                    onClick={() => {
-                      if (project.url !== '#') {
+                  {project.url && project.url !== '#' && (
+                    <Button
+                      onClick={() => {
                         trackProjectView(project.title);
                         window.open(project.url, '_blank');
-                      }
-                    }}
-                    className={`text-sm flex-1 min-w-0 ${project.url === '#' ? 'opacity-50 cursor-not-allowed' : ''}`}
-                    disabled={project.url === '#'}
-                  >
-                    {project.url === '#' ? getTranslation(language, 'projects.comingSoon') || 'À venir' : getTranslation(language, 'projects.viewProject')}
-                  </Button>
+                      }}
+                      className="text-sm flex-1 min-w-0"
+                    >
+                      {getTranslation(language, 'projects.viewProject')}
+                    </Button>
+                  )}
+                  {project.url === '#' && (
+                    <Button
+                      variant="secondary"
+                      className="text-sm flex-1 min-w-0 opacity-50 cursor-not-allowed"
+                      disabled
+                    >
+                      {getTranslation(language, 'projects.comingSoon') || 'À venir'}
+                    </Button>
+                  )}
                   {project.videoUrl && (
                     <Button
                       variant="secondary"
