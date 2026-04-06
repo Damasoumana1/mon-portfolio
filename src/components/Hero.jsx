@@ -105,7 +105,7 @@ const Hero = () => {
               >
                 {/* Remplacez cette image par votre photo de profil */}
                 <img
-                  src="/assets/pro_Dama.jpg"
+                  src="/assets/pro_dama.jpg"
                   alt="Soumana DAMA"
                   className="w-full h-full object-cover"
                   fetchpriority="high"

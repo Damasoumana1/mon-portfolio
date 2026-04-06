@@ -15,7 +15,7 @@ const certificates = [
       fr: "Formation intensive sur les algorithmes quantiques (VQE, Quantum Walks), les qubits supraconducteurs et les circuits quantiques à l'IISc.",
       en: "Intensive workshop on Quantum algorithms (VQE, Quantum Walks), superconducting qubits, and quantum circuits at IISc."
     },
-    image: "/QC_certificate.jpg"
+    image: "/assets/qc_certificate.png"
   },
   {
     id: 1,
