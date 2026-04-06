@@ -49,7 +49,7 @@ export const projectsData = {
             company: 'Projet personnel',
             location: 'Burkina Faso',
             featured: true,
-            url: '#',
+            url: '',
         },
         {
             title: 'Poubelle Connectée Intelligente (IoT)',
@@ -58,7 +58,7 @@ export const projectsData = {
             image: '/assets/smart_bin.png',
             company: 'Projet Académique',
             location: 'Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Modèle IA de Prédiction du Mot Suivant',
@@ -76,7 +76,7 @@ export const projectsData = {
             image: '/assets/Neuronext.png',
             company: 'Projet d\'équipe',
             location: 'Programme FTL',
-            url: '#',
+            url: '',
         },
         {
             title: 'Site Web Fédération Burkinabé de Football',
@@ -94,7 +94,7 @@ export const projectsData = {
             image: '/assets/Bimades.jpg',
             company: 'Projet professionnel',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Interface Admin Silmas SAS',
@@ -103,7 +103,7 @@ export const projectsData = {
             image: '/assets/silma.png',
             company: 'Yaangre Tech - Stage',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Application Mobile de Transfert de Données Locales',
@@ -112,7 +112,7 @@ export const projectsData = {
             image: '/assets/local_transfert.png',
             company: 'Yaangre Tech - Stage',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Application d\'Apprentissage des Verbes Irréguliers Anglais',
@@ -121,7 +121,7 @@ export const projectsData = {
             image: '/assets/irregular_verb.png',
             company: 'Yaangre Tech - Stage',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Modèle d\'Analyse de Sentiments',
@@ -130,7 +130,7 @@ export const projectsData = {
             image: '/assets/sentiment_a.png',
             company: 'Projet personnel',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
     ],
 
@@ -153,7 +153,7 @@ export const projectsData = {
             company: 'Silma SAS',
             location: 'Burkina Faso & Africa',
             featured: true,
-            url: '#',
+            url: '',
         },
         {
             title: 'Smart Mobile Application - Automatic Onion Disease Detection',
