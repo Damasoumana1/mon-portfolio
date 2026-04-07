@@ -157,6 +157,8 @@ export const translations = {
                 // IoT & Others
                 iot_c: "C (Systèmes Embarqués)",
                 arduino: "Arduino & Microcontrôleurs",
+                r_language: "Langage R (Data Science)",
+                c_language: "Langage C (Systèmes Embarqués)",
                 iot_sim: "Wokwi / Blynk / Tinkercad",
                 cyber_best: "Sécurité & Gestion des accès",
                 marketing_digital: "Marketing Digital"
@@ -405,6 +407,8 @@ export const translations = {
                 // IoT & Others
                 iot_c: "C (Embedded Systems)",
                 arduino: "Arduino & Microcontrollers",
+                r_language: "R Language (Data Science)",
+                c_language: "C Language (Embedded Systems)",
                 iot_sim: "Wokwi / Blynk / Tinkercad",
                 cyber_best: "Security & Access Management",
                 marketing_digital: "Digital Marketing"

@@ -35,6 +35,12 @@ const Skills = () => {
         { name: getTranslation(language, 'skills.items.mldl'), level: 85 },
         { name: getTranslation(language, 'skills.items.dataAnalysis'), level: 90 },
         { name: getTranslation(language, 'skills.items.dataAnnotation'), level: 80 },
+        { name: getTranslation(language, 'skills.items.r_language'), level: 75 },
+    ];
+
+    const iotExpertise = [
+        { name: getTranslation(language, 'skills.items.c_language'), level: 80 },
+        { name: getTranslation(language, 'skills.items.arduino'), level: 85 },
     ];
 
     // Compétences Secondaires & Outils (Badges)
@@ -64,7 +70,7 @@ const Skills = () => {
     ];
 
     const otherSkills = [
-        'Cybersécurité', 'LaTeX', 'Microsoft Office', 'VBA', 'Arduino', 'C (Embedded)', 'Digital Marketing'
+        'Cybersécurité', 'LaTeX', 'Microsoft Office', 'VBA', 'Digital Marketing'
     ];
 
     const personalSkills = getTranslation(language, 'skills.personalSkillsList');
@@ -157,8 +163,16 @@ const Skills = () => {
                                 <Shield className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.cybersecurity')} & {getTranslation(language, 'skills.iot')}
                             </h3>
-                            <div className="flex flex-wrap gap-2">
-                                {otherSkills.map(skill => <SkillBadge key={skill} name={skill} color="slate" />)}
+                            <div className="space-y-6 mb-8">
+                                {iotExpertise.map((skill) => (
+                                    <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+                                ))}
+                            </div>
+                            <div className="border-t border-gray-700/50 pt-6">
+                                <h4 className="text-sm font-uppercase tracking-wider text-gray-400 mb-4 uppercase">Other Skills</h4>
+                                <div className="flex flex-wrap gap-2">
+                                    {otherSkills.map(skill => <SkillBadge key={skill} name={skill} color="slate" />)}
+                                </div>
                             </div>
                         </Card>
                     </div>
