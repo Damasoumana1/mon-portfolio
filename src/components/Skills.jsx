@@ -24,6 +24,9 @@ const Skills = () => {
         { name: getTranslation(language, 'skills.items.rag'), level: 85 },
         { name: getTranslation(language, 'skills.items.agentic_ai'), level: 80 },
         { name: getTranslation(language, 'skills.items.cv_opencv'), level: 75 },
+        { name: getTranslation(language, 'skills.items.mldl'), level: 85 },
+        { name: getTranslation(language, 'skills.items.dataAnalysis'), level: 90 },
+        { name: getTranslation(language, 'skills.items.dataAnnotation'), level: 80 },
     ];
 
     // Compétences Secondaires & Outils (Badges)
@@ -49,7 +52,7 @@ const Skills = () => {
     ];
 
     const designTools = [
-        'Figma', 'Canva', 'Jira', 'UML', 'GitHub / GitLab', 'Roboflow', 'Weights & Biases', 'Wokwi', 'Blynk', 'Tinkercad'
+        'Figma', 'Canva', 'Jira', 'UML', 'GitHub / GitLab', 'Roboflow', 'Weights & Biases', getTranslation(language, 'skills.items.labelStudio'), 'Wokwi', 'Blynk', 'Tinkercad'
     ];
 
     const otherSkills = [

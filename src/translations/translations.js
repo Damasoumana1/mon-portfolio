@@ -114,6 +114,9 @@ export const translations = {
                 pandas_numpy: "Analyse de données (Pandas/NumPy)",
                 matplotlib_seaborn: "Visualisation de données",
                 scipy_sklearn: "SciPy / Scikit-learn",
+                mldl: "ML / DL",
+                dataAnalysis: "Analyse et Visualisation de Données",
+                dataAnnotation: "Annotation de Données (Image/Texte/Vidéo)",
                 nlp_llm: "NLP & LLM Reasoning",
                 lstm_transformers: "LSTM & Transformers",
                 tokenization: "Tokenization & Séquences Temporelles",
@@ -143,6 +146,7 @@ export const translations = {
                 ms_office: "Microsoft Office & VBA",
                 latex: "Rédaction scientifique (LaTeX)",
                 weight_biases: "Weights & Biases / Roboflow",
+                labelStudio: "LabelImg / Label Studio",
                 
                 // IoT & Others
                 iot_c: "C (Systèmes Embarqués)",
@@ -352,6 +356,9 @@ export const translations = {
                 pandas_numpy: "Data Analysis (Pandas/NumPy)",
                 matplotlib_seaborn: "Data Visualization",
                 scipy_sklearn: "SciPy / Scikit-learn",
+                mldl: "ML / DL",
+                dataAnalysis: "Data Analysis and Visualization",
+                dataAnnotation: "Data Annotation (Image/Text/Video)",
                 nlp_llm: "NLP & LLM Reasoning",
                 lstm_transformers: "LSTM & Transformers",
                 tokenization: "Tokenization & Temporal Sequences",
@@ -381,6 +388,7 @@ export const translations = {
                 ms_office: "Microsoft Office & VBA",
                 latex: "Scientific Writing (LaTeX)",
                 weight_biases: "Weights & Biases / Roboflow",
+                labelStudio: "LabelImg / Label Studio",
                 
                 // IoT & Others
                 iot_c: "C (Embedded Systems)",
