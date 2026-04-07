@@ -12,10 +12,18 @@ const Skills = () => {
     // Expertises Coeurs (Barres de progression)
     const webMobileExpertise = [
         { name: 'JavaScript / TypeScript', level: 90 },
-        { name: 'React.js / Next.js', level: 85 },
-        { name: 'Flutter / Dart', level: 80 },
-        { name: 'Node.js', level: 85 },
-        { name: 'Python (Backend)', level: 85 },
+        { name: 'React.js / Next.js', level: 90 },
+        { name: 'Flutter / Dart', level: 85 },
+        { name: 'Tailwind CSS / UI Design', level: 90 },
+    ];
+
+    const backendExpertise = [
+        { name: getTranslation(language, 'skills.items.apiArchitect'), level: 90 },
+        { name: getTranslation(language, 'skills.items.pythonBackend'), level: 85 },
+        { name: getTranslation(language, 'skills.items.fintechIntegration'), level: 90 },
+        { name: getTranslation(language, 'skills.items.nodeIntegration'), level: 85 },
+        { name: getTranslation(language, 'skills.items.sqlDatabases'), level: 85 },
+        { name: getTranslation(language, 'skills.items.nosqlDatabases'), level: 80 },
     ];
 
     const aiDataExpertise = [
@@ -31,7 +39,7 @@ const Skills = () => {
 
     // Compétences Secondaires & Outils (Badges)
     const webFrameworks = [
-        'Vue.js', 'Angular', 'React Native', 'PHP', 'Laravel', 'WordPress', 'Tailwind CSS', 'Bootstrap', 'HTML5/CSS3'
+        'Vue.js', 'Angular', 'React Native', 'PHP', 'Laravel', 'WordPress', 'Bootstrap', 'HTML5/CSS3'
     ];
 
     const aiTools = [
@@ -40,11 +48,11 @@ const Skills = () => {
     ];
 
     const backendAPIs = [
-        'FastAPI', 'Flask', 'Django', 'RESTful API', 'Swagger', 'Socket.io', 'Fintech APIs', 'Webhooks'
+        'Flask', 'Socket.io', 'Webhooks', 'RESTful API', 'Swagger'
     ];
 
     const databases = [
-        'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite', 'Redis', 'Supabase', 'Vector DB'
+        'SQLite', 'Supabase', 'Vector DB', 'Firebase'
     ];
 
     const devOpsCloud = [
@@ -115,13 +123,15 @@ const Skills = () => {
                                 <Database className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.apiDatabase')}
                             </h3>
-                            <div className="flex flex-wrap gap-2 mb-6">
-                                {backendAPIs.map(skill => <SkillBadge key={skill} name={skill} color="indigo" />)}
+                            <div className="space-y-6">
+                                {backendExpertise.map((skill) => (
+                                    <ProgressBar key={skill.name} label={skill.name} value={skill.level} />
+                                ))}
                             </div>
-                            <div className="border-t border-gray-700/50 pt-6">
-                                <h4 className="text-sm font-uppercase tracking-wider text-gray-400 mb-4 uppercase">Databases</h4>
+                            <div className="mt-8 border-t border-gray-700/50 pt-6">
+                                <h4 className="text-sm font-uppercase tracking-wider text-gray-400 mb-4 uppercase">Technos & Tools</h4>
                                 <div className="flex flex-wrap gap-2">
-                                    {databases.map(skill => <SkillBadge key={skill} name={skill} color="cyan" />)}
+                                    {[...backendAPIs, ...databases].map(skill => <SkillBadge key={skill} name={skill} color="indigo" />)}
                                 </div>
                             </div>
                         </Card>

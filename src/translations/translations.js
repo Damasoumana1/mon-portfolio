@@ -131,6 +131,12 @@ export const translations = {
                 rest_api: "Architecture RESTful API & Swagger",
                 socket_io: "Real-time (Socket.io)",
                 fintech_api: "Intégration API Fintech",
+                apiArchitect: "Architecture API (REST / Swagger)",
+                pythonBackend: "Python Backend (FastAPI / Django)",
+                nodeIntegration: "Node.js Integration",
+                fintechIntegration: "Intégration Fintech APIs",
+                sqlDatabases: "Bases de données SQL (PostgreSQL / MySQL)",
+                nosqlDatabases: "Bases de données NoSQL (MongoDB / Redis)",
                 
                 // Databases & DevOps
                 sql_nosql: "PostgreSQL / MySQL / MongoDB",
@@ -373,6 +379,12 @@ export const translations = {
                 rest_api: "RESTful API Architecture & Swagger",
                 socket_io: "Real-time (Socket.io)",
                 fintech_api: "Fintech API Integration",
+                apiArchitect: "API Architecture (REST / Swagger)",
+                pythonBackend: "Python Backend (FastAPI / Django)",
+                nodeIntegration: "Node.js Integration",
+                fintechIntegration: "Fintech APIs Integration",
+                sqlDatabases: "SQL Databases (PostgreSQL / MySQL)",
+                nosqlDatabases: "NoSQL Databases (MongoDB / Redis)",
                 
                 // Databases & DevOps
                 sql_nosql: "PostgreSQL / MySQL / MongoDB",
