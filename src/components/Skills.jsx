@@ -36,6 +36,7 @@ const Skills = () => {
         { name: getTranslation(language, 'skills.items.dataAnalysis'), level: 90 },
         { name: getTranslation(language, 'skills.items.dataAnnotation'), level: 80 },
         { name: getTranslation(language, 'skills.items.r_language'), level: 75 },
+        { name: getTranslation(language, 'skills.items.matlab'), level: 80 },
     ];
 
     const iotExpertise = [
