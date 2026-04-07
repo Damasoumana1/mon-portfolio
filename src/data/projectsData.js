@@ -18,7 +18,7 @@ export const projectsData = {
             company: 'Silma SAS',
             location: 'Burkina Faso & Africa',
             featured: true,
-            url: '#',
+            url: '',
         },
         {
             title: 'Application Mobile Intelligente - Détection Automatique de Maladies d\'Oignons',
@@ -28,7 +28,7 @@ export const projectsData = {
             company: 'Projet de thèse de licence',
             location: 'Burkina Faso',
             featured: true,
-            url: '#',
+            url: '',
             videoUrl: 'https://drive.google.com/file/d/1ARea_N6A1rR1gFWXgAagOlCfb18Ad3t7/view?usp=sharing',
         },
         {
@@ -163,7 +163,7 @@ export const projectsData = {
             company: 'Bachelor\'s Thesis Project',
             location: 'Burkina Faso',
             featured: true,
-            url: '#',
+            url: '',
             videoUrl: 'https://drive.google.com/file/d/1ARea_N6A1rR1gFWXgAagOlCfb18Ad3t7/view?usp=sharing',
         },
         {
@@ -184,7 +184,7 @@ export const projectsData = {
             company: 'Personal Project',
             location: 'Burkina Faso',
             featured: true,
-            url: '#',
+            url: '',
         },
         {
             title: 'Smart IoT Waste Bin',
@@ -193,7 +193,7 @@ export const projectsData = {
             image: '/assets/smart_bin.png',
             company: 'Academic Project',
             location: 'Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'AI Next Word Prediction Model',
@@ -211,7 +211,7 @@ export const projectsData = {
             image: '/assets/Neuronext.png',
             company: 'Team Project',
             location: 'FTL Program',
-            url: '#',
+            url: '',
         },
         {
             title: 'Burkina Faso Football Federation Website',
@@ -229,7 +229,7 @@ export const projectsData = {
             image: '/assets/Bimades.jpg',
             company: 'Professional Project',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Silmas SAS Admin Interface',
@@ -238,7 +238,7 @@ export const projectsData = {
             image: '/assets/silma.png',
             company: 'Yaangre Tech - Internship',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Local Data Transfer Mobile Application',
@@ -247,7 +247,7 @@ export const projectsData = {
             image: '/assets/local_transfert.png',
             company: 'Yaangre Tech - Internship',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'English Irregular Verbs Learning Application',
@@ -256,7 +256,7 @@ export const projectsData = {
             image: '/assets/irregular_verb.png',
             company: 'Yaangre Tech - Internship',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
         {
             title: 'Sentiment Analysis Model',
@@ -265,7 +265,7 @@ export const projectsData = {
             image: '/assets/sentiment_a.png',
             company: 'Personal Project',
             location: 'Ouagadougou, Burkina Faso',
-            url: '#',
+            url: '',
         },
     ]
 };
