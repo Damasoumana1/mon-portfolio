@@ -4,6 +4,7 @@ import ProgressBar from './UI/ProgressBar.jsx';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
 import { useState } from 'react';
+import { Monitor, Brain, Database, Cloud, Shield, UserCheck, Sparkles } from 'lucide-react';
 
 const Skills = () => {
     const { language } = useLanguage();
@@ -75,7 +76,7 @@ const Skills = () => {
                     <div className="space-y-12">
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                                <span className="mr-3">💻</span>
+                                <Monitor className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.webMobile')}
                             </h3>
                             <div className="space-y-6">
@@ -90,7 +91,7 @@ const Skills = () => {
 
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                                <span className="mr-3">🤖</span>
+                                <Brain className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.aiDataScience')}
                             </h3>
                             <div className="space-y-6">
@@ -108,7 +109,7 @@ const Skills = () => {
                     <div className="space-y-12">
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                                <span className="mr-3">⚙️</span>
+                                <Database className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.apiDatabase')}
                             </h3>
                             <div className="flex flex-wrap gap-2 mb-6">
@@ -124,7 +125,7 @@ const Skills = () => {
 
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                                <span className="mr-3">🚀</span>
+                                <Cloud className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.deployment')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
@@ -140,7 +141,7 @@ const Skills = () => {
 
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                                <span className="mr-3">🛡️</span>
+                                <Shield className="mr-3 text-blue-500" size={28} />
                                 {getTranslation(language, 'skills.cybersecurity')} & {getTranslation(language, 'skills.iot')}
                             </h3>
                             <div className="flex flex-wrap gap-2">
@@ -154,7 +155,7 @@ const Skills = () => {
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <Card>
                         <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                            <span className="mr-3">🤝</span>
+                            <UserCheck className="mr-3 text-blue-500" size={28} />
                             {getTranslation(language, 'skills.personalSkills')}
                         </h3>
                         <div className="flex flex-wrap gap-3">
@@ -174,7 +175,7 @@ const Skills = () => {
 
                     <Card>
                         <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
-                            <span className="mr-3">🌟</span>
+                            <Sparkles className="mr-3 text-blue-500" size={28} />
                             {getTranslation(language, 'skills.interests')}
                         </h3>
                         <div className="flex flex-wrap gap-3">
