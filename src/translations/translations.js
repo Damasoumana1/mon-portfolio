@@ -249,6 +249,7 @@ export const translations = {
                 github: "GitHub",
                 linkedin: "LinkedIn",
                 facebook: "Facebook",
+                x: "X (Twitter)",
                 email: "Email"
             }
         }
@@ -504,6 +505,7 @@ export const translations = {
                 github: "GitHub",
                 linkedin: "LinkedIn",
                 facebook: "Facebook",
+                x: "X (Twitter)",
                 email: "Email"
             }
         }
