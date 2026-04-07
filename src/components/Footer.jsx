@@ -9,12 +9,12 @@ const Footer = () => {
   return (
     <footer className="py-8" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row justify-between items-start mb-6">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left mb-10 gap-8">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-4 sm:mb-0"
+            className="w-full md:w-auto"
           >
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -22,13 +22,13 @@ const Footer = () => {
             >
               Soumana Dama
             </motion.div>
-            <p className="text-gray-300">{getTranslation(language, 'footer.tagline')}</p>
+            <p className="text-gray-300 max-w-xs mx-auto md:mx-0">{getTranslation(language, 'footer.tagline')}</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex space-x-4"
+            className="flex flex-wrap justify-center md:justify-start gap-4"
           >
             <motion.a
               whileHover={{ scale: 1.2, rotate: 15 }}
@@ -90,29 +90,29 @@ const Footer = () => {
             </motion.a>
           </motion.div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-700 pt-6">
-          <div className="flex flex-col items-center mb-4 sm:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-700 pt-8">
+          <div className="text-center md:text-left order-2 md:order-1">
             <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Soumana DAMA. {getTranslation(language, 'footer.rights')}</p>
           </div>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-6 order-1 md:order-2">
             <motion.a
               whileHover={{ scale: 1.1, color: '#3b82f6' }}
               href="#about"
-              className="text-gray-300 hover:text-blue-400"
+              className="text-gray-300 hover:text-blue-400 text-sm font-medium"
             >
               {getTranslation(language, 'nav.about')}
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1, color: '#3b82f6' }}
               href="#projects"
-              className="text-gray-300 hover:text-blue-400"
+              className="text-gray-300 hover:text-blue-400 text-sm font-medium"
             >
               {getTranslation(language, 'nav.projects')}
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1, color: '#3b82f6' }}
               href="#contact"
-              className="text-gray-300 hover:text-blue-400"
+              className="text-gray-300 hover:text-blue-400 text-sm font-medium"
             >
               {getTranslation(language, 'nav.contact')}
             </motion.a>

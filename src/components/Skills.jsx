@@ -94,9 +94,9 @@ const Skills = () => {
                     {getTranslation(language, 'skills.title')}
                 </motion.h2>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                     {/* Colonne GAUCHE : Expertises Principales */}
-                    <div className="space-y-12">
+                    <div className="space-y-8 lg:space-y-12">
                         <Card>
                             <h3 className="text-2xl font-semibold mb-8 text-blue-500 flex items-center">
                                 <Monitor className="mr-3 text-blue-500" size={28} />
