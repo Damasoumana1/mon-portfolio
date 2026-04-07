@@ -59,7 +59,7 @@ function AppContent() {
         <Projects />
         <Certificates />
         <Contact />
-      </Suspense>
+      </Suspense>On va
       <Footer />
     </div>
   );

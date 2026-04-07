@@ -71,7 +71,12 @@ const Skills = () => {
     ];
 
     const otherSkills = [
-        'Cybersécurité', 'LaTeX', 'Microsoft Office', 'VBA', 'Digital Marketing'
+        getTranslation(language, 'skills.items.iot_sim'),
+        getTranslation(language, 'skills.items.research_writing'),
+        getTranslation(language, 'skills.items.ent_mgmt'),
+        getTranslation(language, 'skills.items.cv_writing'),
+        getTranslation(language, 'skills.items.community_mgmt'),
+        'LaTeX', 'Microsoft Office', 'VBA', 'Digital Marketing'
     ];
 
     const personalSkills = getTranslation(language, 'skills.personalSkillsList');

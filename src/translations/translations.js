@@ -161,6 +161,10 @@ export const translations = {
                 c_language: "Langage C (Systèmes Embarqués)",
                 matlab: "MATLAB (Calcul Scientifique)",
                 iot_sim: "Wokwi / Blynk / Tinkercad",
+                research_writing: "Rédaction de Travaux de Recherche",
+                ent_mgmt: "Gestion de Projets Entrepreneuriaux",
+                cv_writing: "Rédaction de CV & Lettres de Motivation",
+                community_mgmt: "Community Management",
                 cyber_best: "Sécurité & Gestion des accès",
                 marketing_digital: "Marketing Digital"
             }
@@ -412,6 +416,10 @@ export const translations = {
                 c_language: "C Language (Embedded Systems)",
                 matlab: "MATLAB (Scientific Computing)",
                 iot_sim: "Wokwi / Blynk / Tinkercad",
+                research_writing: "Research Writing",
+                ent_mgmt: "Entrepreneurial Project Management",
+                cv_writing: "CV & Cover Letter Writing",
+                community_mgmt: "Community Management",
                 cyber_best: "Security & Access Management",
                 marketing_digital: "Digital Marketing"
             }
