@@ -46,7 +46,13 @@ export const translations = {
             french: "Français",
             english: "Anglais",
             native: "Natif",
-            intermediate: "Intermédiaire"
+            intermediate: "Intermédiaire",
+            stats: {
+                projects: "Projets Réalisés",
+                experience: "Années d'Expérience",
+                certificates: "Certifications",
+                passion: "Passion & Engagement"
+            }
         },
 
         // Formation Section
@@ -250,7 +256,8 @@ export const translations = {
                 linkedin: "LinkedIn",
                 facebook: "Facebook",
                 x: "X (Twitter)",
-                email: "Email"
+                email: "Email",
+                huggingface: "Hugging Face"
             }
         }
     },
@@ -302,7 +309,13 @@ export const translations = {
             french: "French",
             english: "English",
             native: "Native",
-            intermediate: "Intermediate"
+            intermediate: "Intermediate",
+            stats: {
+                projects: "Completed Projects",
+                experience: "Years of Experience",
+                certificates: "Certificates",
+                passion: "Passion & Commitment"
+            }
         },
 
         // Formation Section
@@ -506,7 +519,8 @@ export const translations = {
                 linkedin: "LinkedIn",
                 facebook: "Facebook",
                 x: "X (Twitter)",
-                email: "Email"
+                email: "Email",
+                huggingface: "Hugging Face"
             }
         }
     }

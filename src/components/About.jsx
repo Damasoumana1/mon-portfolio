@@ -2,10 +2,13 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
+import { projectsData } from '../data/projectsData';
 
 const About = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const { language } = useLanguage();
+
+  const projectCount = projectsData[language]?.length || projectsData.fr.length;
 
   return (
     <section id="about" className="py-20" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -78,6 +81,32 @@ const About = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Dynamic Stats Section */}
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-gray-700 pt-10"
+        >
+          <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
+            <span className="text-4xl font-bold text-blue-400 mb-2">+{projectCount}</span>
+            <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'about.stats.projects')}</span>
+          </div>
+          <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
+            <span className="text-4xl font-bold text-blue-400 mb-2">+2</span>
+            <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'about.stats.experience')}</span>
+          </div>
+          <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
+            <span className="text-4xl font-bold text-blue-400 mb-2">+6</span>
+            <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'about.stats.certificates')}</span>
+          </div>
+          <div className="flex flex-col items-center justify-center p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
+            <span className="text-4xl font-bold text-blue-400 mb-2">100%</span>
+            <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'about.stats.passion')}</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

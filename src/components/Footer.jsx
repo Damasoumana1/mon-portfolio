@@ -44,6 +44,18 @@ const Footer = () => {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.2, rotate: 15 }}
+              href="https://huggingface.co/Dama12"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-blue-400"
+              title={getTranslation(language, 'footer.socialLinks.huggingface')}
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <text x="50%" y="50%" textAnchor="middle" dy=".35em" fontSize="16" fontWeight="900" fontFamily="sans-serif">HF</text>
+              </svg>
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2, rotate: 15 }}
               href="https://www.linkedin.com/in/soumana-dama-445096253/"
               target="_blank"
               rel="noopener noreferrer"

@@ -22,6 +22,8 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitri
 ---
 
 ### 📂 Projets Phares
+- **Hugging Face Collection (Mooré & Dioula)** : Modèles open-source d'IA vocale (Whisper ASR, VITS TTS) pour les langues africaines.
+- **FasoProf AI** : Tuteur IA Multilingue (Mooré, Dioula, etc.) avec pipeline ASR & NLP (Projet de Master).
 - **AI Scientific Co-Investigator** : Agent IA autonome pour la recherche scientifique (MBZUAI Hackathon).
 - **Leydi Crowdfunding** : Plateforme Fintech robuste avec gestion des rôles et paiements mobiles.
 - **AgriSens** : Système IoT intelligent pour l'irrigation agricole optimisée (Finaliste Hackathon).
@@ -62,6 +64,8 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitri
 - **Email** : damasoumana1@gmail.com
 - **LinkedIn** : [Soumana DAMA](https://linkedin.com/in/soumanadama)
 - **GitHub** : [@Damasoumana1](https://github.com/Damasoumana1)
+- **Hugging Face** : [@Dama12](https://huggingface.co/Dama12)
+- **X (Twitter)** : [@Soumana_DAMA](https://x.com/Soumana_DAMA)
 
 ---
 *Droit d'auteur © 2026 Soumana DAMA - Tous droits réservés.*

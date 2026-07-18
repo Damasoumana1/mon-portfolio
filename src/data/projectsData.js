@@ -1,6 +1,26 @@
 export const projectsData = {
     fr: [
         {
+            title: 'FasoProf AI – Tuteur IA Multilingue pour les Langues Africaines',
+            description: 'Projet de Master : Conception et développement d\'une plateforme éducative basée sur l\'IA (Français, Mooré, Dioula, Anglais). Architecture d\'un pipeline IA multilingue (Whisper, NLLB-200, Llama 3.1, TTS) et fine-tuning de Whisper Small pour la reconnaissance vocale (ASR) en Mooré.',
+            technologies: ['Python', 'PyTorch', 'Hugging Face', 'Whisper', 'NLLB-200', 'Llama 3.1', 'FastAPI', 'PostgreSQL', 'React Native', 'NLP', 'ASR'],
+            image: '/assets/fasoprof.png',
+            company: 'Projet de Master',
+            location: 'Burkina Faso',
+            featured: true,
+            url: '',
+        },
+        {
+            title: 'Hugging Face Collection : AI pour Langues Africaines (Mooré & Dioula)',
+            description: 'Création et publication de modèles open-source d\'IA vocale (STT & TTS) pour les langues peu dotées. La collection comprend 4 modèles : fine-tuning de Whisper (Tiny/Small) pour la reconnaissance vocale et modèles VITS pour la synthèse vocale en Mooré et Dioula.',
+            technologies: ['PyTorch', 'Hugging Face', 'Whisper ASR', 'VITS TTS', 'Open Source', 'NLP'],
+            image: '/assets/huggingface_collection.png',
+            company: 'Contributeur Open Source',
+            location: 'Remote',
+            featured: true,
+            url: 'https://huggingface.co/collections/Dama12/african-language-ai-moore-and-dioula',
+        },
+        {
             title: 'AI Scientific Co-Investigator (MBZUAI Hackathon)',
             description: 'Agent IA autonome basé sur RAG et LLM Reasoning conçu pour l\'analyse profonde de publications scientifiques, la détection de contradictions méthodologiques et la génération de protocoles expérimentaux.',
             technologies: ['NLP', 'LLM Reasoning', 'Agentic AI', 'RAG', 'Python', 'K2 Think V2'],
@@ -135,6 +155,26 @@ export const projectsData = {
     ],
 
     en: [
+        {
+            title: 'FasoProf AI – Multilingual AI Tutor for African Languages',
+            description: 'Master Project: Designed and developed an AI-powered educational platform supporting French, Mooré, Dioula, and English. Architected a multilingual AI pipeline (Whisper, NLLB-200, Llama 3.1, TTS) and fine-tuned OpenAI Whisper Small for Mooré Automatic Speech Recognition (ASR).',
+            technologies: ['Python', 'PyTorch', 'Hugging Face', 'Whisper', 'NLLB-200', 'Llama 3.1', 'FastAPI', 'PostgreSQL', 'React Native', 'NLP', 'ASR'],
+            image: '/assets/fasoprof.png',
+            company: 'Master Project',
+            location: 'Burkina Faso',
+            featured: true,
+            url: '',
+        },
+        {
+            title: 'Hugging Face Collection: African Language AI (Mooré & Dioula)',
+            description: 'Created and published an open-source collection of Speech-to-Text (STT) and Text-to-Speech (TTS) models for underrepresented African languages. The collection features 4 models: fine-tuned Whisper (Tiny/Small) for ASR and VITS models for speech synthesis in Mooré and Dioula.',
+            technologies: ['PyTorch', 'Hugging Face', 'Whisper ASR', 'VITS TTS', 'Open Source', 'NLP'],
+            image: '/assets/huggingface_collection.png',
+            company: 'Open Source Contributor',
+            location: 'Remote',
+            featured: true,
+            url: 'https://huggingface.co/collections/Dama12/african-language-ai-moore-and-dioula',
+        },
         {
             title: 'AI Scientific Co-Investigator (MBZUAI Hackathon)',
             description: 'Autonomous AI agent powered by RAG and LLM Reasoning designed for deep multi-paper reasoning, detecting methodological contradictions, and generating resource-aware experimental designs.',
