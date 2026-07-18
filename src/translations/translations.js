@@ -51,7 +51,8 @@ export const translations = {
                 projects: "Projets Réalisés",
                 experience: "Années d'Expérience",
                 certificates: "Certifications",
-                passion: "Passion & Engagement"
+                passion: "Passion & Engagement",
+                github: "Dépôts GitHub"
             }
         },
 
@@ -314,7 +315,8 @@ export const translations = {
                 projects: "Completed Projects",
                 experience: "Years of Experience",
                 certificates: "Certificates",
-                passion: "Passion & Commitment"
+                passion: "Passion & Commitment",
+                github: "GitHub Repositories"
             }
         },
 
