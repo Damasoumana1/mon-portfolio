@@ -8,7 +8,7 @@ export const projectsData = {
             company: 'Projet de Master',
             location: 'Burkina Faso',
             featured: true,
-            url: '',
+            url: 'https://github.com/Damasoumana1/landguard-ai',
         },
         {
             title: 'FasoProf AI – Tuteur IA Multilingue pour les Langues Africaines',
@@ -173,7 +173,7 @@ export const projectsData = {
             company: 'Master Project',
             location: 'Burkina Faso',
             featured: true,
-            url: '',
+            url: 'https://github.com/Damasoumana1/landguard-ai',
         },
         {
             title: 'FasoProf AI – Multilingual AI Tutor for African Languages',
