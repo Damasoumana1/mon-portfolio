@@ -18,7 +18,7 @@ export const projectsData = {
             company: 'Projet de Master',
             location: 'Burkina Faso',
             featured: true,
-            url: '',
+            url: 'https://github.com/Damasoumana1/frontend_professeur_ia_multilingue-',
         },
         {
             title: 'Hugging Face Collection : AI pour Langues Africaines (Mooré & Dioula)',
@@ -183,7 +183,7 @@ export const projectsData = {
             company: 'Master Project',
             location: 'Burkina Faso',
             featured: true,
-            url: '',
+            url: 'https://github.com/Damasoumana1/frontend_professeur_ia_multilingue-',
         },
         {
             title: 'Hugging Face Collection: African Language AI (Mooré & Dioula)',
