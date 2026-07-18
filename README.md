@@ -15,13 +15,14 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitri
 ### 🛠️ Technologies & Outils
 - **Frontend** : React.js, TypeScript, Next.js, Tailwind CSS, Flutter, React Native.
 - **Backend** : Python (FastAPI, Django, Flask), Node.js, PHP (Laravel).
-- **IA & Data** : TensorFlow, PyTorch, OpenCV, Pandas, NumPy, Scikit-learn, Weights & Biases.
+- **IA & Data** : TensorFlow, PyTorch, SWI-Prolog, ProbLog, OpenCV, Pandas, NumPy, Scikit-learn.
 - **Databases** : PostgreSQL, MongoDB, MySql, Redis, Supabase, Vector DB (Qdrant).
 - **DevOps** : Docker, Vercel, Netlify, Hugging Face, LWS, Hetzner.
 
 ---
 
 ### 📂 Projets Phares
+- **LandGuard Neuro-Symbolic AI** : Système hybride de régulation foncière (PyTorch, Prolog, ProbLog, XAI).
 - **Hugging Face Collection (Mooré & Dioula)** : Modèles open-source d'IA vocale (Whisper ASR, VITS TTS) pour les langues africaines.
 - **FasoProf AI** : Tuteur IA Multilingue (Mooré, Dioula, etc.) avec pipeline ASR & NLP (Projet de Master).
 - **AI Scientific Co-Investigator** : Agent IA autonome pour la recherche scientifique (MBZUAI Hackathon).

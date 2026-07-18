@@ -1,6 +1,16 @@
 export const projectsData = {
     fr: [
         {
+            title: 'LandGuard Neuro-Symbolic AI',
+            description: 'Projet de Master : Système hybride de régulation foncière combinant Logique de Description (DL), SWI-Prolog, ProbLog et réseaux de neurones (PyTorch). Détection de fraudes et génération de justifications (XAI) via une interface Streamlit.',
+            technologies: ['Python', 'PyTorch', 'SWI-Prolog', 'ProbLog', 'DeepProbLog', 'Streamlit', 'Neuro-Symbolic AI', 'XAI'],
+            image: '/assets/landguard.png',
+            company: 'Projet de Master',
+            location: 'Burkina Faso',
+            featured: true,
+            url: '',
+        },
+        {
             title: 'FasoProf AI – Tuteur IA Multilingue pour les Langues Africaines',
             description: 'Projet de Master : Conception et développement d\'une plateforme éducative basée sur l\'IA (Français, Mooré, Dioula, Anglais). Architecture d\'un pipeline IA multilingue (Whisper, NLLB-200, Llama 3.1, TTS) et fine-tuning de Whisper Small pour la reconnaissance vocale (ASR) en Mooré.',
             technologies: ['Python', 'PyTorch', 'Hugging Face', 'Whisper', 'NLLB-200', 'Llama 3.1', 'FastAPI', 'PostgreSQL', 'React Native', 'NLP', 'ASR'],
@@ -155,6 +165,16 @@ export const projectsData = {
     ],
 
     en: [
+        {
+            title: 'LandGuard Neuro-Symbolic AI',
+            description: 'Master Project: Innovative hybrid land regulation system combining Description Logic (DL), SWI-Prolog, ProbLog, and neural networks (PyTorch). Detects fraud and generates logical justifications (XAI) via a Streamlit dashboard.',
+            technologies: ['Python', 'PyTorch', 'SWI-Prolog', 'ProbLog', 'DeepProbLog', 'Streamlit', 'Neuro-Symbolic AI', 'XAI'],
+            image: '/assets/landguard.png',
+            company: 'Master Project',
+            location: 'Burkina Faso',
+            featured: true,
+            url: '',
+        },
         {
             title: 'FasoProf AI – Multilingual AI Tutor for African Languages',
             description: 'Master Project: Designed and developed an AI-powered educational platform supporting French, Mooré, Dioula, and English. Architected a multilingual AI pipeline (Whisper, NLLB-200, Llama 3.1, TTS) and fine-tuned OpenAI Whisper Small for Mooré Automatic Speech Recognition (ASR).',
