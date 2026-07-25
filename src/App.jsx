@@ -49,7 +49,7 @@ function AppContent() {
   }, [language]);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+    <div className="min-h-screen overflow-x-hidden" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       <Navbar />
       <Hero />
       <Suspense key={language} fallback={<LoadingFallback />}>

@@ -29,7 +29,7 @@ const Formation = () => {
           >
             {/* Item 1 - Bachelor (right on desktop, stacked on mobile) */}
             <div className="flex flex-col md:flex-row items-center mb-8 w-full">
-              <div className="md:w-5/12 w-full"></div>
+              <div className="hidden md:block md:w-5/12 w-full"></div>
               <div className="md:w-2/12 w-full flex md:justify-center justify-start my-3 md:my-0">
                 <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -71,7 +71,7 @@ const Formation = () => {
               <div className="md:w-2/12 w-full flex md:justify-center justify-start my-3 md:my-0 order-2">
                 <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
               </div>
-              <div className="md:w-5/12 w-full order-1 md:order-3"></div>
+              <div className="hidden md:block md:w-5/12 w-full order-1 md:order-3"></div>
             </div>
           </motion.div>
         </div>
