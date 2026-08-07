@@ -31,6 +31,7 @@ const Formation = () => {
             <div className="flex flex-col md:flex-row items-center mb-8 w-full">
               <div className="md:w-5/12 w-full p-4 md:p-6 rounded-lg shadow-md order-3 md:order-1 break-words whitespace-normal border border-blue-500/20" style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>
                 <h3 className="text-lg md:text-xl font-semibold text-blue-400 mb-2">{getTranslation(language, 'formation.degree0')}</h3>
+                <p className="text-sm md:text-base mb-1 font-medium" style={{ color: 'var(--text-primary)' }}>{getTranslation(language, 'formation.specialization0')}</p>
                 <p className="text-sm md:text-base mb-2" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'formation.school0')}</p>
                 <p className="text-sm md:text-base font-semibold" style={{ color: 'var(--text-primary)' }}>{getTranslation(language, 'formation.years0')}</p>
               </div>

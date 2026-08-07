@@ -60,6 +60,7 @@ export const translations = {
         formation: {
             title: "Ma Formation",
             degree0: "Master",
+            specialization0: "Spécialité : Emerging Networks, IoT, and Embedded Intelligence (AI)",
             school0: "Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso (En cours)",
             years0: "2025 - 2027",
             degree1: "Licence : Informatique programmation et entreprenariat",
@@ -327,6 +328,7 @@ export const translations = {
         formation: {
             title: "My Education",
             degree0: "Master's Degree",
+            specialization0: "Specialization: Emerging Networks, IoT, and Embedded Intelligence (AI)",
             school0: "Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso (Ongoing)",
             years0: "2025 - 2027",
             degree1: "Bachelor: Computer Science, Programming and Entrepreneurship",
