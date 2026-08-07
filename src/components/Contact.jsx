@@ -273,8 +273,8 @@ const Contact = () => {
                   onClick={() => {
                     trackCVDownload();
                     const link = document.createElement('a');
-                    link.href = '/assets/Soumana_DAMA_CV.pdf';
-                    link.download = 'Soumana_DAMA_CV.pdf';
+                    link.href = '/assets/Soumana_Dama_Resume.pdf';
+                    link.download = 'Soumana_Dama_Resume.pdf';
                     link.click();
                   }}
                   className="flex items-center justify-center"
