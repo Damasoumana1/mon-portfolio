@@ -15,7 +15,7 @@ export const translations = {
         hero: {
             greeting: "Salut, je suis",
             name: "Soumana DAMA",
-            title: "Développeur Full Stack & Passionné de IA et Data",
+            title: "Développeur Full Stack & Ingénieur IA",
             description: "Passionné par le développement d'applications innovantes et l'intelligence artificielle, je crée des solutions technologiques qui font la différence.",
             downloadCV: "Télécharger CV",
             contactMe: "Me Contacter",
@@ -283,7 +283,7 @@ export const translations = {
         hero: {
             greeting: "Hi, I'm",
             name: "Soumana DAMA",
-            title: "Full Stack Developer & AI and Data Enthusiast",
+            title: "Full Stack Developer & AI Engineer",
             description: "Passionate about developing innovative applications and artificial intelligence, I create technological solutions that make a difference.",
             downloadCV: "Download CV",
             contactMe: "Contact Me",
