@@ -27,6 +27,23 @@ const Formation = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center"
           >
+            {/* Item 0 - Master (left on desktop, stacked on mobile) */}
+            <div className="flex flex-col md:flex-row items-center mb-8 w-full">
+              <div className="md:w-5/12 w-full p-4 md:p-6 rounded-lg shadow-md order-3 md:order-1 break-words whitespace-normal border border-blue-500/20" style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>
+                <h3 className="text-lg md:text-xl font-semibold text-blue-400 mb-2">{getTranslation(language, 'formation.degree0')}</h3>
+                <p className="text-sm md:text-base mb-2" style={{ color: 'var(--text-secondary)' }}>{getTranslation(language, 'formation.school0')}</p>
+                <p className="text-sm md:text-base font-semibold" style={{ color: 'var(--text-primary)' }}>{getTranslation(language, 'formation.years0')}</p>
+              </div>
+              <div className="md:w-2/12 w-full flex md:justify-center justify-start my-3 md:my-0 order-2">
+                <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm0-8a2 2 0 100 4 2 2 0 000-4z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="hidden md:block md:w-5/12 w-full order-1 md:order-3"></div>
+            </div>
+
             {/* Item 1 - Bachelor (right on desktop, stacked on mobile) */}
             <div className="flex flex-col md:flex-row items-center mb-8 w-full">
               <div className="hidden md:block md:w-5/12 w-full"></div>

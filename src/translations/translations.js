@@ -59,6 +59,9 @@ export const translations = {
         // Formation Section
         formation: {
             title: "Ma Formation",
+            degree0: "Master",
+            school0: "Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso (En cours)",
+            years0: "2025 - 2027",
             degree1: "Licence : Informatique programmation et entreprenariat",
             school1: "Burkina Institute of Technology-BIT",
             years1: "2022 - 2025",
@@ -323,6 +326,9 @@ export const translations = {
         // Formation Section
         formation: {
             title: "My Education",
+            degree0: "Master's Degree",
+            school0: "Université Joseph Ki-Zerbo, Ouagadougou, Burkina Faso (Ongoing)",
+            years0: "2025 - 2027",
             degree1: "Bachelor: Computer Science, Programming and Entrepreneurship",
             school1: "Burkina Institute of Technology-BIT",
             years1: "2022 - 2025",
