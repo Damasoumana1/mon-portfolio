@@ -12,11 +12,13 @@ const Hero = () => {
     // Track the CV download event
     trackCVDownload();
 
-    // Créer un lien temporaire pour télécharger le CV
+    // Adapter le CV selon la langue (FR ou EN)
+    const isFr = language === 'fr';
+    const fileName = isFr ? 'Soumana_DAMA_CV.pdf' : 'Soumana_Dama_Resume.pdf';
+
     const link = document.createElement('a');
-    // Le fichier s'appelle "Soumana_Dama_Resume.pdf" dans `public/assets`
-    link.href = '/assets/Soumana_Dama_Resume.pdf';
-    link.download = 'Soumana_Dama_Resume.pdf';
+    link.href = `/assets/${fileName}`;
+    link.download = fileName;
     link.click();
   };
 
@@ -43,23 +45,53 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-400 mb-4"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-400 mb-3"
             >
               {getTranslation(language, 'hero.name')}
             </motion.h1>
+
+            {/* Badges d'élite : PyTorch Ambassador & Founder */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="flex flex-wrap gap-2.5 justify-center lg:justify-start mb-4"
+            >
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/30 shadow-sm backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-orange-400 mr-2 animate-pulse"></span>
+                {getTranslation(language, 'hero.ambassadorBadge')}
+              </span>
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs sm:text-sm font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30 shadow-sm backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-blue-400 mr-2"></span>
+                {getTranslation(language, 'hero.founderBadge')}
+              </span>
+            </motion.div>
+
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-300 mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2"
+              style={{ color: 'var(--text-primary)' }}
             >
               {getTranslation(language, 'hero.title')}
             </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-sm sm:text-base font-semibold text-blue-400 tracking-wide mb-6 uppercase"
+            >
+              {getTranslation(language, 'hero.specialization')}
+            </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="text-lg text-gray-400 mb-8 max-w-md mx-auto lg:mx-0"
+              className="text-base sm:text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+              style={{ color: 'var(--text-secondary)' }}
             >
               {getTranslation(language, 'hero.description')}
             </motion.p>

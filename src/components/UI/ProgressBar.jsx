@@ -16,7 +16,7 @@ const ProgressBar = ({ label, value, className = '' }) => {
         <span className="font-medium" style={{ color: 'var(--text-secondary)' }}>{label}</span>
         <span style={{ color: 'var(--accent)' }}>{value}%</span>
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5">
+      <div className="w-full rounded-full h-2.5 overflow-hidden" style={{ backgroundColor: 'rgba(148, 163, 184, 0.2)' }}>
         <motion.div
           initial={{ width: 0 }}
           animate={inView ? { width: `${value}%` } : {}}

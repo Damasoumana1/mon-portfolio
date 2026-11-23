@@ -409,7 +409,7 @@ const Certificates = () => {
           <div key={cat} className="mb-12">
             <h3 className="text-2xl font-bold text-blue-300 mb-6">{cat}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {grouped[cat].map((certificate, index) => (
+              {grouped[cat].map((certificate) => (
                 <div
                   key={certificate.id}
                   className="p-6 rounded-lg shadow-lg h-full flex flex-col"

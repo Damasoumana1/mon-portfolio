@@ -1,6 +1,16 @@
 export const projectsData = {
     fr: [
         {
+            title: 'JobPilot Africa – Serveur IA MCP (Model Context Protocol)',
+            description: 'Serveur MCP open-source propulsé par l\'IA pour le matching intelligent de stages et d\'emplois junior à travers l\'Afrique. Intègre des agents IA autonomes pour l\'analyse automatisée des écarts de compétences (Skill Gap Analysis) et la simulation d\'entretiens d\'embauche personnalisés.',
+            technologies: ['Model Context Protocol (MCP)', 'FastMCP', 'Python', 'AI Agents', 'Pydantic', 'LLMs', 'Open Source'],
+            image: '/assets/jobpilot.svg',
+            company: 'Créateur Open Source',
+            location: 'Afrique / Remote',
+            featured: true,
+            url: 'https://github.com/Damasoumana1/mcp-jobpilot-africa-',
+        },
+        {
             title: 'LandGuard Neuro-Symbolic AI',
             description: 'Projet de Master : Système hybride de régulation foncière combinant Logique de Description (DL), SWI-Prolog, ProbLog et réseaux de neurones (PyTorch). Détection de fraudes et génération de justifications (XAI) via une interface Streamlit.',
             technologies: ['Python', 'PyTorch', 'SWI-Prolog', 'ProbLog', 'DeepProbLog', 'Streamlit', 'Neuro-Symbolic AI', 'XAI'],
@@ -31,11 +41,11 @@ export const projectsData = {
             url: 'https://huggingface.co/collections/Dama12/african-language-ai-moore-and-dioula',
         },
         {
-            title: 'AI Scientific Co-Investigator (MBZUAI Hackathon)',
-            description: 'Agent IA autonome basé sur RAG et LLM Reasoning conçu pour l\'analyse profonde de publications scientifiques, la détection de contradictions méthodologiques et la génération de protocoles expérimentaux.',
+            title: 'Scoinvestigator AI – Scientific Co-Investigator',
+            description: 'Agent IA autonome basé sur RAG et LLM Reasoning conçu pour l\'analyse profonde de publications scientifiques, la détection de contradictions méthodologiques et la génération de protocoles expérimentaux. Projet fondateur initié lors du hackathon MBZUAI.',
             technologies: ['NLP', 'LLM Reasoning', 'Agentic AI', 'RAG', 'Python', 'K2 Think V2'],
             image: '/assets/ai_investigator.png',
-            company: 'MBZUAI Hackathon (Solo Developer)',
+            company: 'Scoinvestigator AI (Founder)',
             location: 'International / Remote',
             featured: true,
             url: 'https://ai-scientific-coinvestigator-ui.vercel.app/',
@@ -166,6 +176,16 @@ export const projectsData = {
 
     en: [
         {
+            title: 'JobPilot Africa – AI-Powered MCP Server',
+            description: 'Open-source AI-powered Model Context Protocol (MCP) server for internship and early-career job matching across Africa. Integrates autonomous AI agents for automated skill gap analysis, CV optimization, and interactive interview coaching.',
+            technologies: ['Model Context Protocol (MCP)', 'FastMCP', 'Python', 'AI Agents', 'Pydantic', 'LLMs', 'Open Source'],
+            image: '/assets/jobpilot.svg',
+            company: 'Open Source Creator',
+            location: 'Africa / Remote',
+            featured: true,
+            url: 'https://github.com/Damasoumana1/mcp-jobpilot-africa-',
+        },
+        {
             title: 'LandGuard Neuro-Symbolic AI',
             description: 'Master Project: Innovative hybrid land regulation system combining Description Logic (DL), SWI-Prolog, ProbLog, and neural networks (PyTorch). Detects fraud and generates logical justifications (XAI) via a Streamlit dashboard.',
             technologies: ['Python', 'PyTorch', 'SWI-Prolog', 'ProbLog', 'DeepProbLog', 'Streamlit', 'Neuro-Symbolic AI', 'XAI'],
@@ -196,11 +216,11 @@ export const projectsData = {
             url: 'https://huggingface.co/collections/Dama12/african-language-ai-moore-and-dioula',
         },
         {
-            title: 'AI Scientific Co-Investigator (MBZUAI Hackathon)',
-            description: 'Autonomous AI agent powered by RAG and LLM Reasoning designed for deep multi-paper reasoning, detecting methodological contradictions, and generating resource-aware experimental designs.',
+            title: 'Scoinvestigator AI – Scientific Co-Investigator',
+            description: 'Autonomous AI agent powered by RAG and LLM Reasoning designed for deep multi-paper reasoning, detecting methodological contradictions, and generating resource-aware experimental designs. Founding project initiated during the MBZUAI Hackathon.',
             technologies: ['NLP', 'LLM Reasoning', 'Agentic AI', 'RAG', 'Python', 'K2 Think V2'],
             image: '/assets/ai_investigator.png',
-            company: 'MBZUAI Hackathon (Solo Developer)',
+            company: 'Scoinvestigator AI (Founder)',
             location: 'International / Remote',
             featured: true,
             url: 'https://ai-scientific-coinvestigator-ui.vercel.app/',

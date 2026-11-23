@@ -3,7 +3,6 @@ import Card from './UI/Card.jsx';
 import ProgressBar from './UI/ProgressBar.jsx';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslation } from '../translations/translations';
-import { useState } from 'react';
 import { Monitor, Brain, Database, Cloud, Shield, UserCheck, Sparkles } from 'lucide-react';
 
 const Skills = () => {
@@ -50,7 +49,7 @@ const Skills = () => {
     ];
 
     const aiTools = [
-        'NLP', 'LLM Reasoning', 'LSTM', 'Transformers', 'Qdrant', 'YOLOv10-X', 'Image Segmentation', 
+        'Model Context Protocol (MCP)', 'FastMCP', 'AI Agents', 'NLP', 'LLM Reasoning', 'LSTM', 'Transformers', 'Qdrant', 'YOLOv10-X', 'Image Segmentation', 
         'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SciPy', 'Scikit-learn', 'Tableau', 'R', 'Streamlit'
     ];
 

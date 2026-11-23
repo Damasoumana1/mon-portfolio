@@ -90,7 +90,7 @@ const Contact = () => {
               </svg>
               {getTranslation(language, 'contact.contactInfo')}
             </h3>
-            <div className="space-y-6 text-gray-300">
+            <div className="space-y-6" style={{ color: 'var(--text-secondary)' }}>
               <div className="flex items-center">
                 <svg className="w-6 h-6 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2zm5.38-5.38c2.76 0 5 2.24 5 5 0 .55.45 1 1 1s1-.45 1-1c0-3.86-3.14-7-7-7-.55 0-1 .45-1 1s.45 1 1 1zm0 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z" />
@@ -113,7 +113,7 @@ const Contact = () => {
                 <svg className="w-6 h-6 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.405 1.02.006 2.043.139 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21 .69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
                 </svg>
-                <a href="https://github.com/Damasoumana1" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400">
+                <a href="https://github.com/Damasoumana1" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" style={{ color: 'var(--text-secondary)' }}>
                   GitHub
                 </a>
               </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                 <svg className="w-6 h-6 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <text x="50%" y="50%" textAnchor="middle" dy=".35em" fontSize="16" fontWeight="900" fontFamily="sans-serif">HF</text>
                 </svg>
-                <a href="https://huggingface.co/Dama12" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400">
+                <a href="https://huggingface.co/Dama12" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" style={{ color: 'var(--text-secondary)' }}>
                   Hugging Face
                 </a>
               </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                 <svg className="w-6 h-6 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V9h3v10zM6.5 8C5.671 8 5 7.329 5 6.5S5.671 5 6.5 5 8 5.671 8 6.5 7.329 8 6.5 8zM19 19h-3v-5.344c0-1.329-.027-3.038-1.853-3.038-1.853 0-2.137 1.447-2.137 2.941V19h-3V9h2.882v1.225c.4-.768 1.36-1.588 2.798-1.588 2.99 0 3.347 1.964 3.347 4.792V19z" />
                 </svg>
-                <a href="https://www.linkedin.com/in/soumana-dama-445096253/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400">
+                <a href="https://www.linkedin.com/in/soumana-dama-445096253/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" style={{ color: 'var(--text-secondary)' }}>
                   LinkedIn
                 </a>
               </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                 <svg className="w-6 h-6 text-blue-400 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-                <a href="https://x.com/Soumana_DAMA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400">
+                <a href="https://x.com/Soumana_DAMA" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" style={{ color: 'var(--text-secondary)' }}>
                   X (Twitter)
                 </a>
               </div>
@@ -180,7 +180,7 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="relative">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium mb-1" style={{ color: 'var(--text-secondary)' }}>
                   {getTranslation(language, 'contact.nameRequired')}
                 </label>
                 <div className="flex items-center">
@@ -194,13 +194,14 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
+                    className="w-full pl-10 pr-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-blue-500/20"
+                    style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}
                     placeholder={getTranslation(language, 'contact.namePlaceholder')}
                   />
                 </div>
               </div>
               <div className="relative">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium mb-1" style={{ color: 'var(--text-secondary)' }}>
                   {getTranslation(language, 'contact.emailRequired')}
                 </label>
                 <div className="flex items-center">
@@ -214,13 +215,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
+                    className="w-full pl-10 pr-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-blue-500/20"
+                    style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}
                     placeholder={getTranslation(language, 'contact.emailPlaceholder')}
                   />
                 </div>
               </div>
               <div className="relative">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="subject" className="block text-sm font-medium mb-1" style={{ color: 'var(--text-secondary)' }}>
                   {getTranslation(language, 'contact.subjectRequired')}
                 </label>
                 <div className="flex items-center">
@@ -234,7 +236,8 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
+                    className="w-full pl-10 pr-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-blue-500/20"
+                    style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}
                     placeholder={getTranslation(language, 'contact.subjectPlaceholder')}
                   />
                 </div>
@@ -254,7 +257,8 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows="5"
-                    className="w-full pl-10 pr-4 py-3 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" style={{ backgroundColor: 'var(--bg-secondary)' }}
+                    className="w-full pl-10 pr-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-blue-500/20"
+                    style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}
                     placeholder={getTranslation(language, 'contact.messagePlaceholder')}
                   ></textarea>
                 </div>
@@ -272,9 +276,11 @@ const Contact = () => {
                   variant="secondary"
                   onClick={() => {
                     trackCVDownload();
+                    const isFr = language === 'fr';
+                    const fileName = isFr ? 'Soumana_DAMA_CV.pdf' : 'Soumana_Dama_Resume.pdf';
                     const link = document.createElement('a');
-                    link.href = '/assets/Soumana_Dama_Resume.pdf';
-                    link.download = 'Soumana_Dama_Resume.pdf';
+                    link.href = `/assets/${fileName}`;
+                    link.download = fileName;
                     link.click();
                   }}
                   className="flex items-center justify-center"

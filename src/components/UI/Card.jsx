@@ -10,7 +10,7 @@ const Card = ({ children, className = '' }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8 }}
-      className={`p-6 rounded-lg shadow-lg ${className}`} style={{ backgroundColor: 'var(--bg-primary)' }}
+      className={`p-6 rounded-lg shadow-lg border border-blue-500/15 ${className}`} style={{ backgroundColor: 'var(--bg-secondary)' }}
     >
       {children}
     </motion.div>
