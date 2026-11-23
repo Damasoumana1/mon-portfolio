@@ -32,6 +32,7 @@
 ## 🧠 About Me
 
 - 🚀 **Current Roles:** 
+  - **Machine Learning Engineering Intern** at **FlyRank AI** *(Applied ML for search & analytics, embeddings, intent modeling)*
   - **AI/ML Engineer & Software Developer**
   - **PyTorch Foundation Ambassador** *(Official Ambassador for PyTorch & Linux Foundation)*
   - **Founder @ Scoinvestigator AI** *(Autonomous Multi-Agent AI for Scientific Research)*
@@ -54,6 +55,7 @@
 
 | 🏆 Project | 📝 Description | 🛠 Technologies |
 | :--- | :--- | :--- |
+| **[FlyRank AI – ML Capstone](https://damasoumana1.github.io/flyrank-ml-internship-july2026/)** | **ML Engineering Intern.** Observed search-performance signals & client-held-out ranking study for content opportunity scoring using sentence embeddings and intent modeling. ([Repo](https://github.com/Damasoumana1/flyrank-ml-internship-july2026)) | `Sentence-Transformers` `Clustering` `Intent Modeling` `Scikit-learn` `Python` |
 | **[JobPilot Africa](https://github.com/Damasoumana1/mcp-jobpilot-africa-)** | **Open Source Creator.** AI-powered Model Context Protocol (MCP) server for internship and early-career job matching across Africa with automated skill gap analysis and interview coaching. | `MCP` `FastMCP` `AI Agents` `Pydantic` `Python` |
 | **[Scoinvestigator AI](https://ai-scientific-coinvestigator-ui.vercel.app/)** | **Founder.** Autonomous Multi-Agent AI system for scientific literature analysis, contradiction detection, and experimental protocol generation (MBZUAI Hackathon). | `Agentic AI` `RAG` `LLM Reasoning` `Python` |
 | **[African Languages AI (STT/TTS)](https://huggingface.co/collections/Dama12/african-language-ai-moore-and-dioula)** | **Open Source Contributor.** Suite of open-source vocal AI models (Whisper fine-tuning & VITS models) for Mooré and Dioula published on Hugging Face. | `Whisper ASR` `VITS TTS` `PyTorch` `Hugging Face` |

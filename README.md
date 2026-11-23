@@ -5,7 +5,7 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitri
 ---
 
 ### 🌟 Points Forts du Profil
-- **Rôles & Distinctions** : **PyTorch Foundation Ambassador**, Fondateur de **Scoinvestigator AI**, Ambassadeur étudiant du **PNUD (UNDP)**.
+- **Rôles & Distinctions** : **Machine Learning Engineering Intern @ FlyRank AI**, **PyTorch Foundation Ambassador**, Fondateur de **Scoinvestigator AI**, Ambassadeur étudiant du **PNUD (UNDP)**.
 - **Expertise IA & Agentique** : Model Context Protocol (MCP, FastMCP), Agentic AI (RAG, LangGraph), Deep Learning (YOLOv10-X, Vision par ordinateur), Modèles Vocaux multilingues (Whisper STT, VITS TTS).
 - **Projets Open Source Phares** : Créateur de **JobPilot Africa (MCP Server)** et collection open-source sur Hugging Face pour langues africaines (Mooré, Dioula).
 - **Full Stack & Fintech** : Architectures sécurisées (Auth MFA/JWT, RBAC) et passerelles de paiement (LigdiCash, Orange/Moov Money, Wave).
@@ -23,6 +23,7 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitri
 ---
 
 ### 📂 Projets Phares
+- **FlyRank AI (ML Capstone)** : Modélisation d'intentions, embeddings et scoring d'opportunités de contenu sur signaux de recherche réels.
 - **JobPilot Africa (MCP Server)** : Serveur IA open-source basé sur le Model Context Protocol pour le matching d'opportunités de stages/emplois en Afrique.
 - **Scoinvestigator AI** : Système multi-agents IA autonome pour la recherche scientifique et la détection de contradictions (Hackathon MBZUAI).
 - **Collection Hugging Face (Mooré & Dioula)** : Modèles open-source STT (Whisper) et TTS (VITS) pour les langues africaines peu dotées.

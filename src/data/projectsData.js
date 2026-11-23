@@ -11,6 +11,16 @@ export const projectsData = {
             url: 'https://github.com/Damasoumana1/mcp-jobpilot-africa-',
         },
         {
+            title: 'FlyRank AI – Machine Learning pour le Search & Content Opportunity Scoring',
+            description: 'Projet de stage ML Engineering chez FlyRank AI : Modélisation d\'intentions, embeddings et clustering sémantique sur des données réelles de recherche et analytics. Développement d\'une étude de ranking (Client-held-out study) et d\'un score d\'opportunité de rafraîchissement de contenu pour guider les décisions business.',
+            technologies: ['Python', 'Sentence-Transformers', 'Scikit-learn', 'Embeddings & Clustering', 'Intent Modeling', 'Search Analytics', 'Pandas'],
+            image: '/assets/flyrank_ml.svg',
+            company: 'FlyRank AI (ML Intern)',
+            location: 'Remote',
+            featured: true,
+            url: 'https://damasoumana1.github.io/flyrank-ml-internship-july2026/',
+        },
+        {
             title: 'LandGuard Neuro-Symbolic AI',
             description: 'Projet de Master : Système hybride de régulation foncière combinant Logique de Description (DL), SWI-Prolog, ProbLog et réseaux de neurones (PyTorch). Détection de fraudes et génération de justifications (XAI) via une interface Streamlit.',
             technologies: ['Python', 'PyTorch', 'SWI-Prolog', 'ProbLog', 'DeepProbLog', 'Streamlit', 'Neuro-Symbolic AI', 'XAI'],
@@ -184,6 +194,16 @@ export const projectsData = {
             location: 'Africa / Remote',
             featured: true,
             url: 'https://github.com/Damasoumana1/mcp-jobpilot-africa-',
+        },
+        {
+            title: 'FlyRank AI – Search Performance & Content Opportunity Scoring (ML Capstone)',
+            description: 'Machine Learning Engineering Internship Capstone at FlyRank AI: Applied ML on real-world search and analytics data. Leveraged sentence-transformers, embeddings, clustering, and intent modeling to build a client-held-out ranking study and content opportunity scoring pipeline for data-driven decisions.',
+            technologies: ['Python', 'Sentence-Transformers', 'Scikit-learn', 'Embeddings & Clustering', 'Intent Modeling', 'Search Analytics', 'Pandas'],
+            image: '/assets/flyrank_ml.svg',
+            company: 'FlyRank AI (ML Intern)',
+            location: 'Remote',
+            featured: true,
+            url: 'https://damasoumana1.github.io/flyrank-ml-internship-july2026/',
         },
         {
             title: 'LandGuard Neuro-Symbolic AI',
