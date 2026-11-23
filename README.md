@@ -1,34 +1,35 @@
-# 🚀 Portfolio de Soumana DAMA | Développeur Full Stack & IA/Data
+# 🚀 Portfolio de Soumana DAMA | AI/ML Engineer & Software Developer
 
-Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitrine interactive de mes compétences, projets et certifications dans les domaines du **Développement Web & Mobile**, de l'**Intelligence Artificielle** et de l'**IoT**.
+Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une vitrine interactive de mes réalisations, recherches et expertises en **Intelligence Artificielle (Computer Vision, NLP, Edge AI)**, **Model Context Protocol (MCP)** et **Développement Logiciel Full Stack**.
 
 ---
 
 ### 🌟 Points Forts du Profil
-- **Expertise IA** : Agentic AI (RAG, LangGraph), Deep Learning (YOLOv10-X, Vision par ordinateur), NLP/LLM.
-- **Full Stack & Fintech** : Développement de plateformes sécurisées (Auth MFA/JWT) et intégrations de paiements (LigdiCash, Orange/Moov Money).
-- **Quantum Computing** : Workshop à l'**Indian Institute of Science (IISc), Bengaluru**.
-- **IoT / Systèmes Embarqués** : Finaliste Hackathon APESI 2025, automatisation et capteurs intelligents.
+- **Rôles & Distinctions** : **PyTorch Foundation Ambassador**, Fondateur de **Scoinvestigator AI**, Ambassadeur étudiant du **PNUD (UNDP)**.
+- **Expertise IA & Agentique** : Model Context Protocol (MCP, FastMCP), Agentic AI (RAG, LangGraph), Deep Learning (YOLOv10-X, Vision par ordinateur), Modèles Vocaux multilingues (Whisper STT, VITS TTS).
+- **Projets Open Source Phares** : Créateur de **JobPilot Africa (MCP Server)** et collection open-source sur Hugging Face pour langues africaines (Mooré, Dioula).
+- **Full Stack & Fintech** : Architectures sécurisées (Auth MFA/JWT, RBAC) et passerelles de paiement (LigdiCash, Orange/Moov Money, Wave).
+- **Formation d'Excellence** : Master IoT & Embedded Intelligence (Université Joseph Ki-Zerbo) • B.Sc. BIT (Major de soutenance : 19/20 - GPA 4.0 equiv.).
 
 ---
 
 ### 🛠️ Technologies & Outils
+- **IA, Data & Protocoles** : PyTorch, Model Context Protocol (MCP), FastMCP, Hugging Face Transformers, TensorFlow, OpenCV, YOLOv10-X, DeepProbLog, Scikit-learn, Pandas, NumPy, Streamlit, Qdrant Vector DB.
 - **Frontend** : React.js, TypeScript, Next.js, Tailwind CSS, Flutter, React Native.
-- **Backend** : Python (FastAPI, Django, Flask), Node.js, PHP (Laravel).
-- **IA & Data** : TensorFlow, PyTorch, SWI-Prolog, ProbLog, OpenCV, Pandas, NumPy, Scikit-learn.
-- **Databases** : PostgreSQL, MongoDB, MySql, Redis, Supabase, Vector DB (Qdrant).
-- **DevOps** : Docker, Vercel, Netlify, Hugging Face, LWS, Hetzner.
+- **Backend** : Python (FastAPI, Flask, Django), Node.js, PHP (Laravel).
+- **Databases** : PostgreSQL, MongoDB, SQLite, Supabase, Redis.
+- **DevOps & Cloud** : Docker, Netlify, Vercel, Hugging Face Hub, Git, GitHub Actions.
 
 ---
 
 ### 📂 Projets Phares
-- **LandGuard Neuro-Symbolic AI** : Système hybride de régulation foncière (PyTorch, Prolog, ProbLog, XAI).
-- **Hugging Face Collection (Mooré & Dioula)** : Modèles open-source d'IA vocale (Whisper ASR, VITS TTS) pour les langues africaines.
-- **FasoProf AI** : Tuteur IA Multilingue (Mooré, Dioula, etc.) avec pipeline ASR & NLP (Projet de Master).
-- **AI Scientific Co-Investigator** : Agent IA autonome pour la recherche scientifique (MBZUAI Hackathon).
-- **Leydi Crowdfunding** : Plateforme Fintech robuste avec gestion des rôles et paiements mobiles.
-- **AgriSens** : Système IoT intelligent pour l'irrigation agricole optimisée (Finaliste Hackathon).
-- **OnionScan** : Application mobile de détection de maladies d'oignons par drone/smartphone.
+- **JobPilot Africa (MCP Server)** : Serveur IA open-source basé sur le Model Context Protocol pour le matching d'opportunités de stages/emplois en Afrique.
+- **Scoinvestigator AI** : Système multi-agents IA autonome pour la recherche scientifique et la détection de contradictions (Hackathon MBZUAI).
+- **Collection Hugging Face (Mooré & Dioula)** : Modèles open-source STT (Whisper) et TTS (VITS) pour les langues africaines peu dotées.
+- **LandGuard Neuro-Symbolic AI** : Système hybride de régulation foncière combinant logique symbolique (Prolog/ProbLog) et réseaux de neurones (PyTorch).
+- **FasoProf AI** : Plateforme d'apprentissage multilingue propulsée par un pipeline vocal complet (Whisper, NLLB-200, Llama 3.1).
+- **OnionScan** : Détection intelligente de maladies d'oignons par drone/smartphone via YOLOv10-X.
+- **Plateforme Leydi (Silma SAS)** : Plateforme Fintech robuste de crowdfunding avec paiements multi-opérateurs.
 
 ---
 
